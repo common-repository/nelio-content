@@ -1,0 +1,47 @@
+{
+	"name": "@nelio-content/edit-post",
+	"version": "1.0.0",
+	"description": "Common components in post edit screen.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"dependencies": {
+		"@nelio-content/components": "file:../components",
+		"@nelio-content/data": "file:../data",
+		"@nelio-content/date": "file:../date",
+		"@nelio-content/networks": "file:../networks",
+		"@nelio-content/social-message-editor": "file:../social-message-editor",
+		"@nelio-content/social-timeline": "file:../social-timeline",
+		"@nelio-content/task-editor": "file:../task-editor",
+		"@nelio-content/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.1",
+		"@types/wordpress__edit-post": "4.0.1",
+		"@types/wordpress__rich-text": "3.4.6",
+		"@safe-wordpress/api-fetch": "file:../safe-wordpress/api-fetch",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/compose": "file:../safe-wordpress/compose",
+		"@safe-wordpress/core-data": "file:../safe-wordpress/core-data",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/hooks": "file:../safe-wordpress/hooks",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"@safe-wordpress/rich-text": "file:../safe-wordpress/rich-text",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"classnames": "^2.3.1",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"ts-brand": "^0.0.2"
+	}
+}

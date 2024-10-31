@@ -1,0 +1,49 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-social-message {
+
+	$profile-size: 18px;
+
+	background: $social-colors__background;
+	border-top-color: $social-colors__border;
+	color: $social-colors__foreground;
+
+	&__content {
+		overflow: hidden;
+		padding-right: 10px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__profile-icon {
+		color: $social-colors__background;
+		float: right;
+		font-size: $profile-size;
+	}
+
+	&--is-auto {
+		background: $social-colors__background--is-auto;
+		border-top: 1px solid $social-colors__border--is-auto;
+		color: $social-colors__foreground--is-auto;
+		font-style: italic;
+	}
+
+	&--is-error {
+		background: $social-colors__background--is-error;
+		border-top-color: $social-colors__border--is-error;
+		color: $social-colors__foreground--is-error;
+		text-decoration: line-through;
+	}
+
+	&--is-error &__profile-icon {
+		color: $social-colors__background--is-error;
+	}
+
+	&__mode-icon {
+		float: left;
+
+		svg {
+			width: 1.3em;
+		}
+	}
+}

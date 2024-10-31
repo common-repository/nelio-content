@@ -1,0 +1,12 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-period-label {
+	color: $layout-colors__foreground;
+	font-size: 1.3em;
+	margin: 0;
+	padding: 0 1em;
+
+	&--is-blurred {
+		opacity: 0.4;
+	}
+}

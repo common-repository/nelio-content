@@ -1,0 +1,60 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-media-metabox {
+
+	--nelio-content-timeline-indentation: 2.5em;
+
+	&__section {
+		border-bottom: 1px solid $layout-colors__border;
+		padding-top: 1em;
+		padding-bottom: 1em;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+	}
+
+	&__section-title {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		font-weight: 700;
+		margin-bottom: 1em;
+
+		.dashicon {
+			margin-right: 0.5em;
+		}
+
+		.components-button {
+			font-weight: 400;
+			margin-left: 1em;
+		}
+	}
+
+	&__section-content {
+		margin: 0 2em;
+	}
+
+	&__section-content--is-analytics {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		> * {
+			width: 18em;
+		}
+	}
+
+	&__section-content--is-timeline {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2em;
+	}
+}

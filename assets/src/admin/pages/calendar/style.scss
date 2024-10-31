@@ -1,0 +1,48 @@
+@import "~admin-stylesheets/colors";
+
+body {
+	background: $layout-colors__background;
+}
+
+.nelio-content.wrap {
+	margin: 0;
+	padding: 0;
+}
+
+@media print {
+
+	#wpadminbar,
+	#adminmenumain,
+	#adminmenuwrap,
+	.nelio-content-header__toolbar,
+	.nelio-content-item-creation-button,
+	.nelio-content-header__previous-button,
+	.nelio-content-header__next-button,
+	.nelio-content-header__paused-social-publication-warning,
+	.nelio-content-calendar__sidebar {
+		display: none !important;
+	}
+
+	.components-popover,
+	#adminmenuwrap {
+		visibility: hidden !important;
+	}
+
+	.nelio-content-calendar__grid {
+		width: 100% !important;
+	}
+
+	.wp-toolbar {
+		padding-top: 0 !important;
+	}
+
+	#wpcontent {
+		margin-left: 0 !important;
+	}
+
+	.nelio-content-calendar__header {
+		width: 100% !important;
+		margin-top: 0 !important;
+		position: unset !important;
+	}
+}

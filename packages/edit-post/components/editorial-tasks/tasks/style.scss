@@ -1,0 +1,9 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-task-list {
+	margin-bottom: 1em;
+
+	&--is-empty {
+		color: $layout-colors__foreground--is-blurred;
+	}
+}

@@ -1,0 +1,12 @@
+.nelio-content-analytics {
+	margin-top: 2em;
+
+	&__title {
+		display: flex;
+		align-items: center;
+	}
+
+	&__actual-title {
+		flex-grow: 1;
+	}
+}

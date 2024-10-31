@@ -1,0 +1,58 @@
+.nelio-content-social-message-reddit-preview {
+
+	background: #fff;
+	border: 1px solid #dfe1e5;
+	border-radius: 8px;
+	cursor: default;
+	font-family: IBMPlexSans, Arial, sans-serif;
+	margin: 1em 2em;
+	padding: 1em;
+	user-select: none;
+
+	&__profile-and-date {
+		color: #787c7e;
+		font-size: 11px;
+	}
+
+	&__text-and-image {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__image {
+		border: 1px solid #0079d3;
+		border-radius: 4px;
+		height: 80px;
+		margin-left: 1em;
+		object-fit: cover;
+		width: 120px;
+	}
+
+	&__link {
+		color: #0079d3;
+		font-size: 11px;
+	}
+
+}
+
+
+/* MESSAGE */
+
+.nelio-content-social-message-reddit-preview .nelio-content-computed-text-preview {
+
+	color: #000;
+	cursor: auto;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0.5em 0;
+	user-select: auto;
+
+	&--empty {
+		opacity: 0.6;
+	}
+
+	&__link:last-of-type {
+		display: none;
+	}
+
+}

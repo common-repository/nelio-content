@@ -1,0 +1,21 @@
+.nelio-content-task-preset-loader {
+
+	&.components-modal__frame {
+		max-width: 70em;
+	}
+
+	&__actions {
+		margin-top: 2em;
+		display: flex;
+		gap: 0.5em;
+	}
+
+	&__spacer {
+		flex-grow: 1;
+		min-width: 8em;
+	}
+
+	&__confirm-action.components-button {
+		margin-left: 0.5em;
+	}
+}

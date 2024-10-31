@@ -1,0 +1,23 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-premium-feature-button {
+
+	&--is-premium.components-button.has-text.has-icon {
+		background: $premium-feature__background;
+		border-radius: 100rem;
+		color: $premium-feature__foreground;
+		height: auto;
+		outline-color: $premium-feature__foreground;
+		padding: 0.4em 1em;
+
+		&.is-small {
+			padding: 0.2em 0.6em;
+		}
+	}
+
+	&.components-button.has-icon.is-small .dashicon {
+		font-size: 16px;
+		width: 1em;
+		height: 1em;
+	}
+}

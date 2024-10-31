@@ -1,0 +1,41 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-author-option-in-author-searcher {
+
+	$author-picture-size: 32px;
+	$padding: 12px;
+
+	cursor: default;
+	min-height: #{$author-picture-size};
+	padding: $padding;
+
+	&__author-picture {
+		float: left;
+		font-size: $author-picture-size;
+		height: 1em;
+		overflow: hidden;
+		position: relative;
+		width: 1em;
+	}
+
+	&__name {
+		margin-left: #{$author-picture-size + $padding};
+	}
+
+	&__email {
+		margin-left: #{$author-picture-size + $padding};
+		font-size: 0.9em;
+		opacity: 0.7;
+	}
+
+	&--is-selected {
+		background: $component-colors__option-background--is-selected;
+		color: $component-colors__option-foreground--is-selected;
+	}
+
+	&:hover,
+	&--is-focused {
+		background: $component-colors__option-background--is-focused;
+		color: $component-colors__option-foreground--is-focused;
+	}
+}

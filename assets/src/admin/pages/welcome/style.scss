@@ -1,0 +1,87 @@
+@import "~admin-stylesheets/colors";
+
+#wpwrap {
+	background: #aeaebb;
+}
+
+ul#adminmenu > li.current > a.current::after {
+	border-right-color: #aeaebb;
+}
+
+.nelio-content-welcome-page {
+
+	background: #fff;
+	border-radius: 2px;
+	border: 1px solid $layout-colors__border;
+	display: block;
+	margin: 5em auto 1em;
+	max-width: 40em;
+	padding: 2em;
+	text-align: center;
+
+	&__logo {
+		max-width: 20em;
+
+		.full-logo_svg__nelio-content-logo-dark,
+		.nelio-content-logo-dark {
+			fill: $components-colors__logo--is-dark;
+		}
+
+		.full-logo_svg__nelio-content-logo-light,
+		.nelio-content-logo-light {
+			fill: $components-colors__logo--is-light;
+		}
+	}
+
+	&__subtitle {
+		color: $layout-colors__foreground--is-blurred;
+		margin: 1em 2em;
+	}
+
+	&__intro {
+		font-size: 18px;
+		margin: 1em 0;
+	}
+
+	&__policy {
+		max-width: 90%;
+		margin: 1em auto;
+		text-align: left;
+
+		.components-base-control__field {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.components-checkbox-control__input-container {
+			margin-top: 0.2em;
+		}
+	}
+
+	&__actions {
+		border-top: 1px solid $layout-colors__border--is-subtle;
+		margin: 2em auto 0;
+		max-width: 90%;
+		padding-top: 2em;
+	}
+
+	&__start.is-large {
+		font-size: 18px;
+		height: auto;
+		padding: 0.5em 1.5em;
+	}
+
+	&__error {
+		color: $layout-colors__foreground--is-warning;
+		display: flex;
+		margin: 2em 1em;
+		margin-bottom: 0;
+		text-align: left;
+
+		.dashicon {
+			flex-grow: 0;
+			flex-shrink: 0;
+			margin-right: 0.5em;
+		}
+	}
+}

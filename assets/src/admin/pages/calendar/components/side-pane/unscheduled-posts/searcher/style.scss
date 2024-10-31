@@ -1,0 +1,10 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-unscheduled-post-searcher {
+	padding: 0.5em;
+
+	.components-base-control,
+	.components-base-control__field {
+		margin-bottom: 0;
+	}
+}

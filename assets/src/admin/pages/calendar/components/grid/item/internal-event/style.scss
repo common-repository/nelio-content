@@ -1,0 +1,32 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-internal-event {
+
+	background: $internal-event-colors__background;
+	border-radius: 2px;
+	border: 1px solid $internal-event-colors__background;
+	border-left-width: 4px;
+	color: $internal-event-colors__foreground;
+	margin: 1px;
+	padding: 1px 4px;
+
+	&.nelio-content-calendar-item--is-locked {
+		filter: none;
+		opacity: 1;
+	}
+
+	&.nelio-content-calendar-item--is-blurred {
+		filter: saturate(0);
+		opacity: 0.2;
+	}
+
+	&--is-past-event:not(:hover) {
+		opacity: 0.2;
+	}
+
+	&__type-icon svg {
+		width: 1.3em;
+		vertical-align: bottom;
+		fill: $internal-event-colors__foreground;
+	}
+}

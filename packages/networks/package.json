@@ -1,0 +1,23 @@
+{
+	"name": "@nelio-content/networks",
+	"version": "1.0.0",
+	"description": "Network information.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/twitter-text": "^3.1.1",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"lodash": "^4.17.21",
+		"twitter-text": "^3.1.0"
+	}
+}

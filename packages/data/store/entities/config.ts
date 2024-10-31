@@ -1,0 +1,31 @@
+import type { State as AuthorsState } from './authors/config';
+import type { State as CommentsState } from './comments/config';
+import type { State as ExternalEventsState } from './external-events/config';
+import type { State as FeedsState } from './feeds/config';
+import type { State as InternalEventsState } from './internal-events/config';
+import type { State as MediasState } from './medias/config';
+import type { State as MessagesState } from './messages/config';
+import type { State as PostsState } from './posts/config';
+import type { State as PremiumState } from './premium/config';
+import type { State as ReferencesState } from './references/config';
+import type { State as ReusableMessagesState } from './reusable-messages/config';
+import type { State as SharedLinksState } from './shared-links/config';
+import type { State as TasksState } from './tasks/config';
+import type { State as TaskPresetsState } from './task-presets/config';
+
+export type State = {
+	readonly authors: AuthorsState;
+	readonly comments: CommentsState;
+	readonly externalEvents: ExternalEventsState;
+	readonly feeds: FeedsState;
+	readonly internalEvents: InternalEventsState;
+	readonly medias: MediasState;
+	readonly messages: MessagesState;
+	readonly posts: PostsState;
+	readonly premiumByType: PremiumState;
+	readonly references: ReferencesState;
+	readonly reusableMessages: ReusableMessagesState;
+	readonly sharedLinks: SharedLinksState;
+	readonly tasks: TasksState;
+	readonly taskPresets: TaskPresetsState;
+};

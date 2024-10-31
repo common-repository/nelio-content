@@ -1,0 +1,79 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-day {
+
+	background: $layout-colors__background;
+	transition: background 200ms ease-in-out;
+
+	&--is-hovered {
+		background: $component-colors__calendar-hover-background--is-default;
+	}
+
+	&__header {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		height: 1.8em;
+		justify-content: space-between;
+		padding: 0.2em 0.5em 0.5em;
+	}
+
+	&__label {
+
+		&--past-day {
+			color: $layout-colors__foreground--is-blurred;
+		}
+
+		&--today {
+			background: $component-colors__calendar-today-background;
+			color: $component-colors__calendar-today-foreground;
+			border-radius: 2px;
+			padding: 0 0.5em;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: row-reverse;
+		opacity: 0;
+		padding-left: 1em;
+		transition: opacity 200ms ease-in-out;
+	}
+
+	&:hover &__actions {
+		opacity: 1;
+	}
+
+	&__header-button {
+		display: none;
+		height: auto !important;
+		padding: 3px !important;
+
+		&.components-button.has-icon {
+			min-width: 0;
+		}
+
+		svg {
+			height: 1.3em;
+			width: 1.3em;
+		}
+	}
+
+	&__add-item-icon {
+		display: flex;
+		visibility: hidden;
+	}
+
+	&:hover &__add-item-icon {
+		visibility: visible;
+	}
+
+	&__actions:hover &__header-button {
+		display: flex;
+	}
+
+	&__actions:hover &__add-item-icon {
+		display: none;
+	}
+
+}

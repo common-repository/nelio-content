@@ -1,0 +1,25 @@
+@import "~admin-stylesheets/mixins";
+
+.nelio-content-author-icon {
+
+	background: rgba(0, 0, 0, 0.2);
+	background-clip: content-box;
+	border-radius: 50%;
+	height: 1em;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 1em;
+
+	&__actual-profile-picture {
+		background-size: cover;
+		background-clip: content-box;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	@include background-letters(#{&});
+
+}

@@ -1,0 +1,26 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-reusable-message {
+	$profile-size: 18px;
+
+	background: $social-colors__background;
+	border-top: 3px solid $social-colors__border;
+	color: $social-colors__foreground;
+	cursor: pointer;
+	margin-bottom: 2px;
+	min-height: $profile-size;
+	padding: 0.4em;
+
+	&__content {
+		overflow: hidden;
+		padding-right: 10px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__profile-icon {
+		color: $social-colors__background;
+		float: right;
+		font-size: $profile-size;
+	}
+}

@@ -1,0 +1,63 @@
+.nelio-content-task-editor {
+
+	width: 100%;
+	max-width: 40em;
+
+	.components-modal__header h1 {
+		width: 100%;
+	}
+
+	&__title {
+		align-items: center;
+		display: flex;
+		width: 100%;
+
+		&-text {
+			flex-grow: 1;
+		}
+
+		&-help {
+			flex-grow: 0;
+		}
+	}
+
+	&__actual-task textarea {
+		height: 5em;
+	}
+
+	&__options {
+		display: flex;
+		flex-direction: row;
+		min-height: 3.5em;
+	}
+
+	&__assignee {
+		flex-grow: 1;
+		margin-right: 0.5rem;
+		width: 100%;
+	}
+
+	&__date-due {
+		flex-grow: 1;
+		width: 100%;
+	}
+
+	&__actions {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 1em;
+
+		> * {
+			margin-right: 0.5em;
+		}
+
+		> :last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__help-action {
+		flex-grow: 1;
+	}
+}

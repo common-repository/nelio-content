@@ -1,0 +1,27 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-automation-profile-settings {
+
+	&__header {
+		align-items: center;
+		display: flex;
+		margin-bottom: 2em;
+	}
+
+	&__profile-details {
+		flex-grow: 1;
+	}
+
+	&__profile-name {
+		margin-top: 0;
+		margin-bottom: 0.2em;
+	}
+
+	&__sharing-settings {
+		margin-bottom: 2em;
+
+		.components-base-control__help {
+			color: $wordpress-colors__error-color;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"jsx": "react",
+		"lib": [ "es2021", "dom" ],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": false,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"pretty": true,
+		"removeComments": false,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"verbatimModuleSyntax": true,
+		"target": "es5",
+		"typeRoots": [ "node_modules/@types", "types" ],
+		"paths": {
+			"@nelio-content/calendar": [ "packages/calendar" ],
+			"@nelio-content/components": [ "packages/components" ],
+			"@nelio-content/data": [ "packages/data" ],
+			"@nelio-content/date": [ "packages/date" ],
+			"@nelio-content/edit-post": [ "packages/edit-post" ],
+			"@nelio-content/networks": [ "packages/networks" ],
+			"@nelio-content/post-quick-editor": [
+				"packages/post-quick-editor"
+			],
+			"@nelio-content/premium-hooks-for-pages": [
+				"packages/premium-hooks-for-pages"
+			],
+			"@nelio-content/social-message-editor": [
+				"packages/social-message-editor"
+			],
+			"@nelio-content/social-timeline": [ "packages/social-timeline" ],
+			"@nelio-content/task-editor": [ "packages/task-editor" ],
+			"@nelio-content/types": [ "packages/types" ],
+			"@nelio-content/utils": [ "packages/utils" ],
+			"~/nelio-content-images/*": [ "assets/src/images/*" ],
+			"~/nelio-content-pages/*": [ "assets/src/admin/pages/*" ],
+			"~/nelio-content-premium/*": [ "premium/src/*" ],
+			"@nelio-content-premium/future-action-editor": [
+				"premium/src/features/future-actions/packages/future-action-editor"
+			],
+			"@safe-wordpress/*": [ "packages/safe-wordpress/*" ]
+		}
+	},
+	"excludeDirectories": [ "node_modules", "assets/dist", "premium/dist" ],
+	"excludeFiles": [ "tsconfig.json" ],
+	"compileOnSave": false,
+	"buildOnSave": false
+}

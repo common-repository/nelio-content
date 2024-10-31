@@ -1,0 +1,28 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-day-grid {
+
+	background: $layout-colors__border--is-subtle;
+	display: grid;
+	grid-template-columns: repeat(7, minmax(1px, 1fr));
+	grid-template-rows: 2em;
+	grid-gap: 1px;
+
+	&__header {
+		background: $layout-colors__background;
+		display: grid;
+		grid-column: 1 / 8;
+		grid-template-columns: repeat(7, minmax(1px, 1fr));
+	}
+
+	&__weekday {
+		align-items: center;
+		color: $layout-colors__foreground;
+		display: flex;
+		font-weight: 400;
+		justify-content: center;
+		opacity: 0.9;
+		text-transform: uppercase;
+	}
+
+}

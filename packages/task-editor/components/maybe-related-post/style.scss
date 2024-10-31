@@ -1,0 +1,36 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-task-editor {
+
+	&__related-post-controls {
+		align-items: center;
+		margin-bottom: 1em;
+		text-align: left;
+
+		&--has-related-post-link {
+			display: flex;
+
+			> strong {
+				flex-shrink: 0;
+				margin-right: 0.5em;
+			}
+
+			> a {
+				display: flex;
+				margin-right: 6em;
+				min-width: 0;
+
+				> .nelio-content-related-post-link {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				> :last-child {
+					flex-shrink: 0;
+				}
+			}
+		}
+	}
+
+}

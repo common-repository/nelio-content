@@ -1,0 +1,35 @@
+.nelio-content-social-media-timeline-period {
+	margin: 0 auto 2em;
+	max-width: 60em;
+	width: 100%;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font-weight: 500;
+		margin-bottom: 1em;
+	}
+
+	&__period-content--is-metabox {
+		margin-left: 2em;
+	}
+
+	&__messages {
+		margin-bottom: 1em;
+	}
+
+	&__add-button-wrapper {
+		text-align: center;
+	}
+
+	&__add-button--is-large,
+	&__add-button--is-large.components-button {
+		align-items: center;
+		display: flex;
+		height: 6em;
+		justify-content: center;
+		width: 100%;
+	}
+}

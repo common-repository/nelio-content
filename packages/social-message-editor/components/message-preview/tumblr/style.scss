@@ -1,0 +1,143 @@
+.nelio-content-social-message-tumblr-preview {
+
+	display: flex;
+	flex-direction: row;
+	background: #fff;
+	cursor: default;
+	font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	margin: 1em;
+	padding: 0;
+	user-select: none;
+
+	.nelio-content-social-profile-icon {
+		font-size: 42px;
+		margin-right: 20px;
+
+		&__profile-picture {
+			border-radius: 4px;
+		}
+	}
+
+	&__wrapper {
+		border: 1px solid #e1e8ed;
+		border-radius: 4px;
+		flex-grow: 1;
+	}
+
+	&__name {
+		color: #444;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 1.25;
+		margin: 1em;
+		padding: 0;
+	}
+
+	&__image {
+		height: 200px;
+		margin-bottom: 1em;
+		object-fit: cover;
+		overflow: hidden;
+		width: 100%;
+	}
+
+}
+
+/* MESSAGE */
+
+.nelio-content-social-message-tumblr-preview .nelio-content-computed-text-preview {
+
+	color: #333;
+	cursor: auto;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.01em;
+	line-height: 20px;
+	margin: 1em;
+	margin-top: 0;
+	user-select: auto;
+
+	&--empty {
+		opacity: 0.6;
+	}
+
+	&__link,
+	&__mention,
+	&__hash {
+		border-bottom: 1px solid #d0d0d0;
+		text-decoration: none;
+	}
+
+}
+
+/* Post Preview */
+
+/* SHARED POST */
+
+.nelio-content-tumblr-shared-link {
+
+	color: #333;
+	margin-bottom: 1em;
+	overflow: hidden;
+	position: relative;
+
+	&__image {
+		height: 160px;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		&::after {
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+			content: "";
+			display: block;
+			height: 30%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+
+	&__signature {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		left: 1em;
+		position: absolute;
+		top: 1em;
+		z-index: 2;
+	}
+
+
+	&__content {
+		background: #f2f2f2;
+		padding: 1em;
+	}
+
+	&__title {
+		color: #444;
+		font-family: Gibson, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 22px;
+		line-height: 1;
+		font-weight: 700;
+		margin-bottom: 0.2em;
+
+		&::after {
+			display: inline-block;
+			content: ">";
+			font-size: 0.8em;
+			margin-left: 0.5em;
+			margin-top: -0.1em;
+		}
+	}
+
+	&__excerpt {
+		font-size: 14px;
+	}
+}

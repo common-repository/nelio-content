@@ -1,0 +1,19 @@
+{
+	"name": "@nelio-content/types",
+	"version": "1.0.0",
+	"description": "Types.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"devDependencies": {
+		"ts-brand": "^0.0.2"
+	}
+}

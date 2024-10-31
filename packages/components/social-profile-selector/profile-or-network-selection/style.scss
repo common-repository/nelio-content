@@ -1,0 +1,30 @@
+.nelio-content-network-selection-in-profile-selector {
+	align-items: center;
+	box-sizing: border-box;
+	cursor: default;
+	display: flex;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+	overflow: hidden;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 50%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+
+	&__icon {
+		flex-grow: 0;
+		width: 1em;
+		font-size: 1.6em;
+	}
+
+	&__label {
+		flex-grow: 1;
+		padding-left: 0.5em;
+	}
+
+	&--is-disabled {
+		opacity: 0.4;
+	}
+}

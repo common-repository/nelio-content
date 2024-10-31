@@ -1,0 +1,67 @@
+@import "~admin-stylesheets/colors";
+
+#wpbody-content {
+	margin: 0;
+	padding: 0;
+}
+
+#wpcontent {
+	padding: 0;
+}
+
+ul#adminmenu a.wp-has-current-submenu::after,
+ul#adminmenu > li.current > a.current::after {
+	border-right-color: $layout-colors__background;
+}
+
+.nelio-content-calendar {
+	background: $layout-colors__background;
+	color: $layout-colors__foreground;
+
+	$header-height: 4em;
+	$sidebar-width: 15em;
+	$banner-sidebar-width: 20em;
+
+	&__header {
+		background: $layout-colors__background;
+		border-bottom: 1px solid $layout-colors__border;
+		box-sizing: border-box;
+		color: $layout-colors__foreground;
+		height: $header-height;
+		margin-top: -$header-height;
+		position: fixed;
+		right: 0;
+	}
+
+	&__grid {
+		box-sizing: border-box;
+		margin: 0;
+		margin-top: $header-height;
+		width: calc(100% - 1px);
+
+		&--has-sidebar {
+			width: calc(100% - #{$sidebar-width});
+		}
+
+		&--has-banner-sidebar {
+			width: calc(100% - #{$banner-sidebar-width});
+		}
+	}
+
+	&__sidebar {
+		background: $layout-colors__background;
+		border-left: 1px solid $layout-colors__border;
+		bottom: 0;
+		box-sizing: border-box;
+		color: $layout-colors__foreground;
+		position: fixed;
+		right: 0;
+		top: calc(#{$header-height} + 32px);
+		width: $sidebar-width;
+
+		&--is-banner {
+			width: $banner-sidebar-width;
+		}
+	}
+
+}

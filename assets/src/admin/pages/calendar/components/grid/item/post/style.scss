@@ -1,0 +1,33 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-post {
+
+	$author-size: 18px;
+
+	background: $post-colors__background;
+	border-top-color: $post-colors__border;
+	color: $post-colors__foreground;
+	min-height: $author-size;
+
+	&__author-icon {
+		font-size: $author-size;
+		float: right;
+		margin-left: 0.2em;
+	}
+
+	&__status-icon svg {
+		width: 1.3em;
+		vertical-align: bottom;
+	}
+
+	&__details {
+		font-size: 11px;
+		opacity: 0.7;
+
+		svg {
+			width: 1.3em;
+			vertical-align: bottom;
+		}
+	}
+
+}

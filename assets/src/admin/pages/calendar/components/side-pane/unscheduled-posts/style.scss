@@ -1,0 +1,95 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-unscheduled-posts {
+	display: flex;
+	flex-direction: column;
+
+	&--is-hovered {
+		background: $component-colors__calendar-hover-background--is-default;
+	}
+
+	&__title {
+		background: $layout-colors__background--is-emphasized;
+		border-bottom: 1px solid $layout-colors__border--is-subtle;
+		flex-grow: 0;
+		flex-shrink: 0;
+		padding: 0.3em;
+		text-align: center;
+		text-transform: uppercase;
+
+		> div {
+			max-width: calc(100% - 4em);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: row-reverse;
+		opacity: 0;
+		padding-left: 1em;
+		position: absolute;
+		right: 0;
+		transition: opacity 200ms ease-in-out;
+	}
+
+	&:hover &__actions {
+		opacity: 1;
+	}
+
+	&__header-button {
+		display: none;
+		height: auto !important;
+		padding: 3px !important;
+
+		&.components-button.has-icon {
+			min-width: 0;
+		}
+
+		svg {
+			height: 1.3em;
+			width: 1.3em;
+		}
+	}
+
+	&__add-item-icon {
+		display: flex;
+		visibility: hidden;
+	}
+
+	&:hover &__add-item-icon {
+		visibility: visible;
+	}
+
+	&__actions:hover &__header-button {
+		display: flex;
+	}
+
+	&__actions:hover &__add-item-icon {
+		display: none;
+	}
+
+	&__searcher {
+		flex-shrink: 0;
+		flex-grow: 0;
+	}
+
+	&__list {
+		flex-shrink: 1;
+		flex-grow: 1;
+		overflow-y: auto;
+
+		&::after {
+			content: "";
+			display: block;
+			height: 0.5em;
+		}
+	}
+
+	&__load-more-action {
+		text-align: center;
+		padding: 1em;
+	}
+}

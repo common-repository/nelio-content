@@ -1,0 +1,12 @@
+.nelio-content-new-feed-form {
+	display: flex;
+	flex-direction: row;
+
+	&__input-text {
+		flex-grow: 1;
+	}
+
+	&__add-button {
+		margin-left: 0.5em;
+	}
+}

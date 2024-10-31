@@ -1,0 +1,22 @@
+.nelio-content-social-message-editor {
+
+	&__message-editor {
+
+		position: relative;
+
+		textarea {
+			height: 5em;
+			overflow-y: always;
+			resize: none;
+		}
+
+		&--is-merged-with-social-profile-selector {
+
+			textarea {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				margin-top: 0;
+			}
+		}
+	}
+}

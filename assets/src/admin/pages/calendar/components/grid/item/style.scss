@@ -1,0 +1,31 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-item {
+	border: none;
+	border-bottom: 1px solid $layout-colors__border--is-subtle;
+	border-top: 3px solid transparent;
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0;
+	margin-bottom: 1px;
+	padding: 0.4em;
+	transition: all 200ms ease-in-out;
+
+	&--is-blurred,
+	&--is-locked {
+		cursor: default;
+		opacity: 0.2;
+		filter: saturate(0);
+	}
+
+	&--is-locked#{&}--is-highlighted {
+		cursor: default;
+		opacity: 0.8;
+		filter: saturate(0);
+	}
+
+	&--is-dragging {
+		opacity: 0;
+	}
+
+}

@@ -1,0 +1,17 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-message-editor__recurring-dialog {
+	display: flex;
+	gap: 0.5em;
+}
+
+.nelio-content-social-message-editor__error-summary {
+	color: $wordpress-colors__error-color;
+	display: flex;
+	flex-grow: 1;
+	margin-right: 1.7em;
+
+	span {
+		margin-right: 0.3em;
+	}
+}

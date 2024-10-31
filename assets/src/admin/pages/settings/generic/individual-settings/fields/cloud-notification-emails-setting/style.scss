@@ -1,0 +1,16 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-cloud-notification-emails-setting {
+
+	&__input {
+		max-width: 25em;
+		min-height: 8em;
+		width: 100%;
+	}
+
+
+	&__error-message {
+		font-style: italic;
+		color: $wordpress-colors__error-color;
+	}
+}

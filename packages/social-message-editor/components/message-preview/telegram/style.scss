@@ -1,0 +1,108 @@
+.nelio-content-social-message-telegram-preview {
+
+	background: #fff;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 8px;
+	color: #000;
+	cursor: default;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	margin: 1em auto;
+	max-width: 30em;
+	overflow: hidden;
+	padding: 0;
+	user-select: none;
+
+	.nelio-content-social-profile-icon {
+		float: left;
+		font-size: 36px;
+		height: 36px;
+		margin-right: 10px;
+		width: 36px;
+	}
+
+	&__display-name {
+		color: #222;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+
+	&__date {
+		color: #888;
+		margin: 0 0.5em;
+		text-align: right;
+	}
+
+	&__image {
+		height: 180px;
+		margin: 0;
+		object-fit: cover;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+
+}
+
+
+/* MESSAGE */
+
+.nelio-content-social-message-telegram-preview .nelio-content-computed-text-preview {
+
+	color: #222;
+	cursor: auto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 0;
+	padding: 0.5em;
+	user-select: auto;
+
+	&--empty {
+		opacity: 0.6;
+	}
+
+	&__link,
+	&__mention,
+	&__hash {
+		color: #3390ec;
+	}
+}
+
+
+/* SHARED POST */
+
+.nelio-content-telegram-shared-link {
+
+	padding: 0.5em;
+	margin: 0 0.5em;
+	border-left: 2px solid #3390ec;
+
+	&__image {
+		border-radius: 6px;
+		height: 180px;
+		margin: 0;
+		margin-top: -0.5em;
+		object-fit: cover;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	&__content {
+		color: #000;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+	&__author {
+		color: #3390ec;
+		font-weight: 600;
+	}
+
+	&__title {
+		font-weight: 600;
+	}
+}

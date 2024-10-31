@@ -1,0 +1,121 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-message-editor {
+
+	&__quick-actions-wrapper {
+		margin-bottom: 1em;
+	}
+
+	&__previous-messages-loader {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__char-counter-wrapper {
+		align-items: center;
+		display: flex;
+		height: 30px;
+		justify-content: flex-end;
+		width: 2.5em;
+
+		&--is-disabled {
+			filter: grayscale(100);
+			opacity: 0.7;
+		}
+	}
+
+	&__quick-actions-wrapper,
+	&__quick-actions {
+		display: flex;
+		flex-direction: row;
+		text-align: right;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__related-post-controls {
+		align-items: center;
+		flex-grow: 1;
+		text-align: left;
+		width: 0;
+
+		&--has-related-post-link {
+			display: flex;
+			min-width: 0;
+
+			> strong {
+				flex-shrink: 0;
+				margin-right: 0.5em;
+			}
+
+			> a {
+				display: flex;
+				min-width: 0;
+
+				> .nelio-content-related-post-link {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+
+				> :last-child {
+					flex-shrink: 0;
+				}
+			}
+		}
+	}
+
+	&__quick-action {
+		font-size: 13px;
+		height: 30px;
+		margin-left: 2px;
+		padding: 5px;
+
+		&:first-child {
+			margin-left: 3em;
+		}
+
+		&--is-toggled {
+			color: $wordpress-colors__toggle-foreground--is-toggled;
+			background: $wordpress-colors__toggle-background--is-toggled;
+
+			&:focus,
+			&:hover {
+				box-shadow: 0 0 0 1px $wordpress-colors__toggle-background--is-toggled, inset 0 0 0 1px $wordpress-colors__toggle-foreground--is-toggled !important;
+				color: $wordpress-colors__toggle-foreground--is-toggled !important;
+				background: $wordpress-colors__toggle-background--is-toggled !important;
+			}
+		}
+
+		&--is-image-required {
+			animation: nelio-content-image-required-quick-action 1s ease-in-out infinite;
+		}
+	}
+
+	&__image-dropdown,
+	&__use-template,
+	&__existing-message-selector,
+	&__add-placeholder {
+		padding: 0;
+
+		.components-button {
+			font-size: 13px;
+			height: 100%;
+			padding: 5px;
+			width: 100%;
+		}
+	}
+
+}
+
+@keyframes nelio-content-image-required-quick-action {
+
+	40% {
+		color: $component-colors__icon-background--is-notice;
+	}
+
+	60% {
+		color: $component-colors__icon-background--is-notice;
+	}
+}

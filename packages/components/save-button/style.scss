@@ -1,0 +1,21 @@
+.nelio-content-save-button {
+
+	&--is-saving {
+		animation: nelio-content-save-button-saving-animation 1s infinite;
+	}
+}
+
+@keyframes nelio-content-save-button-saving-animation {
+
+	0% {
+		opacity: 0.7;
+	}
+
+	50% {
+		opacity: 0.3;
+	}
+
+	100% {
+		opacity: 0.7;
+	}
+}

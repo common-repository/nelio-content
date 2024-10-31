@@ -1,0 +1,53 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-post-option-in-post-searcher {
+
+	$image-size: 52px;
+	$padding: 12px;
+
+	cursor: default;
+	min-height: #{$image-size};
+	padding: $padding;
+
+	&__image {
+		background: $component-colors__placeholder;
+		float: left;
+		font-size: $image-size;
+		height: 1em;
+		overflow: hidden;
+		position: relative;
+		width: 1em;
+	}
+
+	&__actual-image {
+		background-size: cover;
+		bottom: 0;
+		height: 1em;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1em;
+	}
+
+	&__title {
+		margin-left: #{$image-size + $padding};
+	}
+
+	&__details {
+		margin-left: #{$image-size + $padding};
+		font-size: 0.9em;
+		opacity: 0.7;
+	}
+
+	&--is-selected {
+		background: $component-colors__option-background--is-selected;
+		color: $component-colors__option-foreground--is-selected;
+	}
+
+	&:hover,
+	&--is-focused {
+		background: $component-colors__option-background--is-focused;
+		color: $component-colors__option-foreground--is-focused;
+	}
+}

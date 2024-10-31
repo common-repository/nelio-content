@@ -1,0 +1,70 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-feed {
+	border-bottom: 1px solid $layout-colors__border--is-subtle;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 48px 1fr;
+	grid-template-areas:
+		"icon name"
+		"icon url"
+		"icon twitter"
+		"icon actions";
+
+	&__icon {
+		grid-area: icon;
+	}
+
+	&__actual-icon {
+		background-color: $component-colors__placeholder;
+		background-size: cover;
+		border-radius: 3px;
+		height: 32px;
+		width: 32px;
+	}
+
+	&__name {
+		font-size: 1.2em;
+		font-weight: 600;
+		grid-area: name;
+	}
+
+	&__url {
+		font-size: 0.9em;
+		grid-area: url;
+	}
+
+	&__twitter {
+		font-size: 0.9em;
+		grid-area: twitter;
+	}
+
+	&__actions {
+		color: $layout-colors__foreground--is-blurred;
+		grid-area: actions;
+		margin-top: 0.5em;
+		opacity: 0;
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&--is-deleting {
+		background: $layout-colors__background--is-emphasized;
+
+		> * {
+			filter: grayscale(100%);
+			opacity: 0.5;
+		}
+	}
+
+	&--is-deleting > &__feedback {
+		filter: none;
+		opacity: 1;
+	}
+
+	&:hover &__actions {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,64 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-task {
+
+	$author-size: 18px;
+
+	background: $task-colors__background;
+	border-top-color: $task-colors__actual-color;
+	cursor: pointer;
+
+	&.nelio-content-calendar-item--is-blurred,
+	&.nelio-content-calendar-item--is-locked {
+		cursor: default;
+	}
+
+	&__author-icon {
+		float: right;
+		font-size: $author-size;
+		margin-left: 0.2em;
+	}
+
+	.components-base-control__field {
+		margin: 0;
+	}
+
+	&--is-red {
+		background: $task-colors__background--is-red;
+		border-top-color: $task-colors__actual-color--is-red;
+	}
+
+	&--is-orange {
+		background: $task-colors__background--is-orange;
+		border-top-color: $task-colors__actual-color--is-orange;
+	}
+
+	&--is-yellow {
+		background: $task-colors__background--is-yellow;
+		border-top-color: $task-colors__actual-color--is-yellow;
+	}
+
+	&--is-green {
+		background: $task-colors__background--is-green;
+		border-top-color: $task-colors__actual-color--is-green;
+	}
+
+	&--is-cyan {
+		background: $task-colors__background--is-cyan;
+		border-top-color: $task-colors__actual-color--is-cyan;
+	}
+
+	&--is-blue {
+		background: $task-colors__background--is-blue;
+		border-top-color: $task-colors__actual-color--is-blue;
+	}
+
+	&--is-purple {
+		background: $task-colors__background--is-purple;
+		border-top-color: $task-colors__actual-color--is-purple;
+	}
+
+	input[type="checkbox"]:disabled {
+		cursor: default;
+	}
+}

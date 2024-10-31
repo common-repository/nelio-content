@@ -1,0 +1,51 @@
+.nelio-content-loading-animation {
+
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 1em;
+
+	&--is-small {
+		flex-direction: row;
+
+		.components-spinner {
+			bottom: 0;
+			display: block;
+			left: 0;
+			margin: 0 1em;
+			position: relative;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&--is-large {
+		flex-direction: column;
+	}
+
+	&__logo {
+		max-width: 180px;
+		width: 100%;
+
+		path {
+			fill: transparent;
+			stroke: #555d66;
+			stroke-dasharray: 206;
+			stroke-dashoffset: 0;
+			stroke-width: 0.3px;
+			animation: nelio-content-loading-animation 1.5s ease infinite alternate;
+		}
+	}
+
+	&__text--is-large {
+		font-size: 1.4em;
+	}
+
+}
+
+@keyframes nelio-content-loading-animation {
+
+	0% {
+		stroke-dashoffset: 206;
+	}
+}

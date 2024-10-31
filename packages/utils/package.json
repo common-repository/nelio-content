@@ -1,0 +1,36 @@
+{
+	"name": "@nelio-content/utils",
+	"version": "1.0.0",
+	"description": "Some utilities.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"dependencies": {
+		"@nelio-content/date": "file:../date",
+		"@nelio-content/networks": "file:../networks"
+	},
+	"devDependencies": {
+		"@types/latinize": "^0.2.15",
+		"@types/lodash": "^4.14.171",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/hooks": "file:../safe-wordpress/hooks",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/notices": "file:../safe-wordpress/notices",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"hashtagfy": "^1.0.1",
+		"latinize": "^0.4.0",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"store": "^2.0.12",
+		"ts-brand": "^0.0.2",
+		"uuid": "^8.3.2"
+	}
+}

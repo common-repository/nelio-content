@@ -1,0 +1,136 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-template-editor-dialog {
+	max-width: 46em;
+	width: 100%;
+
+	&__text {
+		margin-top: 0.5em;
+
+		textarea {
+			height: 5em;
+		}
+	}
+
+	&__quick-actions {
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+	}
+
+	&__quick-action {
+		font-size: 13px;
+		height: 30px;
+		margin-left: 2px;
+		padding: 5px;
+
+		&--is-toggled {
+			color: $wordpress-colors__toggle-foreground--is-toggled;
+			background: $wordpress-colors__toggle-background--is-toggled;
+
+			&:focus,
+			&:hover {
+				box-shadow:
+					0 0 0 1px
+					$wordpress-colors__toggle-background--is-toggled,
+					inset 0 0 0 1px
+					$wordpress-colors__toggle-foreground--is-toggled !important;
+				color: $wordpress-colors__toggle-foreground--is-toggled !important;
+				background: $wordpress-colors__toggle-background--is-toggled !important;
+			}
+		}
+	}
+
+	&__add-placeholder {
+		padding: 0;
+
+		.components-button {
+			font-size: 13px;
+			height: 100%;
+			padding: 5px;
+			width: 100%;
+		}
+	}
+
+	&__quick-action-spacer {
+		flex-grow: 1;
+	}
+
+	&__author {
+		flex-grow: 1;
+		margin-right: 0.2em;
+		width: 100%;
+
+		> div {
+			margin: 0;
+		}
+	}
+
+	&__type {
+		flex-grow: 1;
+		margin-left: 0.2em;
+		width: 100%;
+	}
+
+	&__buttons {
+		align-items: center;
+		display: flex;
+		margin-top: 1em;
+	}
+
+	&__default-buttons-wrapper {
+		flex-grow: 1;
+		text-align: right;
+	}
+
+	&__save-button {
+		margin-left: 0.5em;
+	}
+
+	&__extra {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+
+		> * {
+			width: 100%;
+		}
+	}
+
+	&__tab-selector {
+		border: none;
+		width: auto;
+		gap: 5px;
+
+		.components-button.has-icon.has-icon {
+			font-size: 13px;
+			height: 30px;
+			padding: 5px;
+
+			min-width: 24px;
+			padding-left: 6px;
+			padding-right: 6px;
+
+			&::before {
+				left: 0;
+				right: 0;
+			}
+
+			.is-pressed {
+				color: $wordpress-colors__toggle-foreground--is-toggled;
+				background: $wordpress-colors__toggle-background--is-toggled;
+
+				&:focus,
+				&:hover {
+					box-shadow:
+						0 0 0 1px
+						$wordpress-colors__toggle-background--is-toggled,
+						inset 0 0 0 1px
+						$wordpress-colors__toggle-foreground--is-toggled !important;
+					color: $wordpress-colors__toggle-foreground--is-toggled !important;
+					background: $wordpress-colors__toggle-background--is-toggled !important;
+				}
+			}
+		}
+	}
+}

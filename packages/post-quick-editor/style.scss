@@ -1,0 +1,96 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-post-quick-editor {
+
+	width: 100%;
+	max-width: 50em;
+
+	.components-modal__header h1 {
+		width: 100%;
+	}
+
+	&__header {
+		align-items: center;
+		display: flex;
+
+		> :first-child {
+			flex-grow: 1;
+		}
+	}
+
+	&__title {
+		align-items: center;
+		display: flex;
+		flex-grow: 1;
+
+		&-text {
+			flex-grow: 1;
+		}
+
+		&-help {
+			flex-grow: 0;
+		}
+
+		> * {
+			width: 100%;
+		}
+	}
+
+	&__title-type-and-status {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 0.5em;
+	}
+
+	&__type, #{&}__status {
+		max-width: 20%;
+
+		select {
+			text-overflow: ellipsis;
+		}
+	}
+
+	&__author-and-datetime {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 0.5em;
+	}
+
+	&__author {
+		flex-grow: 1;
+		max-width: calc(33% - 0.5em);
+		width: 100%;
+	}
+
+	&__date, #{&}__time {
+		flex-grow: 1;
+		width: 100%;
+
+		input {
+			width: 100%;
+		}
+	}
+
+	&__edit-warning {
+		color: $layout-colors__foreground--is-warning;
+		display: flex;
+		flex-direction: row;
+		margin-top: 1em;
+	}
+
+	&__actions {
+		align-items: center;
+		display: flex;
+		gap: 0.5em;
+		justify-content: flex-end;
+		margin-top: 2em;
+	}
+
+	&__extra-actions {
+		display: flex;
+		flex-grow: 1;
+		gap: 1em;
+	}
+}

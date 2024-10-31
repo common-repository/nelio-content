@@ -1,0 +1,36 @@
+.nelio-content-social-template-editor {
+
+	&__date-selector {
+
+		.components-base-control,
+		.components-base-control .components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__positive-days-selector {
+		margin: 0;
+		width: 5em;
+	}
+
+	&__reset-date-button {
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+
+	&__week-days-selector {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		> .components-base-control {
+			margin-bottom: 0;
+
+			.components-checkbox-control__input-container {
+				margin-right: 5px;
+			}
+		}
+	}
+
+}
+

@@ -1,0 +1,32 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-subscription-required-page__license-form {
+	align-items: center;
+	display: flex;
+	padding: 1em;
+	width: 25em;
+
+	&__text-control {
+		flex-grow: 1;
+		margin-right: 1em;
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button {
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+
+	&__error-message {
+		padding: 0 1em 1em;
+		color: $wordpress-colors__error-color;
+		font-style: italic;
+
+		.dashicon {
+			margin-right: 5px;
+		}
+	}
+}

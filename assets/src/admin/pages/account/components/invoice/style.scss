@@ -1,0 +1,35 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-invoice {
+
+	&:nth-child(odd) {
+		background: $layout-colors__background--is-emphasized;
+	}
+
+	&__reference,
+	&__date {
+		padding: 0.8em 1.2em;
+		text-align: left;
+	}
+
+	&__total {
+		padding: 0.8em 1.2em;
+		text-align: right;
+
+		&-value--refunded {
+			text-decoration: line-through;
+		}
+	}
+
+	&__link {
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	&__label {
+		color: $layout-colors__foreground--is-blurred;
+		margin-right: 0.5em;
+		text-decoration: none;
+	}
+
+}

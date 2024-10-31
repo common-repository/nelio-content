@@ -1,0 +1,41 @@
+.nelio-content-task-template-editor-date-due {
+
+	&__back-button {
+		flex-grow: 0;
+		margin-left: 0.5em;
+	}
+
+	&__default-select {
+		width: 100%;
+
+		select {
+			max-width: none;
+		}
+	}
+
+	&__exact-date {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+
+		&-input {
+			flex-grow: 1;
+		}
+	}
+
+	&__days-offset {
+		align-items: center;
+		flex-direction: row;
+		display: flex;
+		gap: 0.5em;
+
+		&__back-button {
+			flex-grow: 0;
+		}
+	}
+
+	&__days-input {
+		width: 5em;
+		flex-grow: 0;
+	}
+}

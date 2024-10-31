@@ -1,0 +1,12 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/mixins";
+
+.nelio-content-social-network-icon {
+	background: $component-colors__placeholder;
+	content: "";
+	display: block;
+	height: 1em;
+	width: 1em;
+
+	@include social-networks(#{&});
+}

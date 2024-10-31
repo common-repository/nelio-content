@@ -1,0 +1,26 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-export-dialog {
+
+	max-width: 40em;
+
+	&__paragraph {
+		margin-bottom: 1em;
+	}
+
+	&__download-csv {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__ics {
+		border-top: 1px solid $layout-colors__border;
+		margin-top: 2em;
+		padding-top: 2em;
+	}
+
+	&__ics-option {
+		padding: 0 2em;
+	}
+}

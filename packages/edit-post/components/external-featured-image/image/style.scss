@@ -1,0 +1,19 @@
+.nelio-content-efi-image {
+
+	&__image-button.components-button {
+		display: block;
+		height: 10em;
+		padding: 0;
+		width: 100%;
+	}
+
+	&__actual-image#{&}__actual-image {
+		height: 10em;
+		object-fit: cover;
+		width: 100%;
+	}
+
+	&__replace-button {
+		margin: 1em 0;
+	}
+}

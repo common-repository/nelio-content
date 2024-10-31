@@ -1,0 +1,59 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-target-selector {
+
+	&__info {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__targets {
+		border: 1px solid $layout-colors__border;
+		list-style-type: none;
+		margin: none;
+		max-height: 12em;
+		max-width: 35em;
+		overflow-y: auto;
+		padding: none;
+	}
+
+	&__target {
+		border-bottom: 1px solid $layout-colors__border;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 1em;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__checkbox {
+		flex-grow: 1;
+	}
+
+	&__target-image {
+		background: $component-colors__placeholder;
+		background-size: cover;
+		border-radius: 2px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 24px;
+		height: 1em;
+		margin: 0;
+		margin-left: 10px;
+		padding: 0;
+		width: 1em;
+	}
+
+	&__actions {
+		margin-top: 2em;
+		text-align: right;
+	}
+
+	&__save-action {
+		margin-left: 0.5em;
+	}
+
+}

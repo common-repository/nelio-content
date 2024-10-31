@@ -1,0 +1,31 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-permalink-settings {
+
+	&__title {
+		color: #1e1e1e;
+		font-size: 11px;
+		font-weight: 500;
+		margin-bottom: 1em;
+		margin-top: 2em;
+		text-transform: uppercase;
+	}
+
+	&__query-arg {
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+
+		> * {
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: calc(50% - 0.5em);
+		}
+	}
+
+	&__query-args-actions {
+		display: flex;
+		justify-content: flex-end;
+		gap: 1em;
+	}
+}

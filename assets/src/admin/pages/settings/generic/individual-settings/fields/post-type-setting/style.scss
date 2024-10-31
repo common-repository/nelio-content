@@ -1,0 +1,11 @@
+.nelio-content-post-type-setting {
+	max-width: 25em;
+	position: relative;
+
+	&--help {
+		cursor: pointer;
+		position: absolute;
+		left: -20px;
+		top: 7px;
+	}
+}

@@ -1,0 +1,221 @@
+@use "sass:map";
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nelio-content-automation-group {
+	background: $layout-colors__background;
+	border: 1px solid $layout-colors__border;
+	margin-top: 1em;
+	width: 100%;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&--is-invalid,
+	&--is-warning {
+		background-clip: content-box;
+		background-image: $icon-map;
+		background-size: $icon-map-size;
+		border-radius: 50%;
+		box-sizing: content-box;
+		content: "";
+		display: block;
+		flex-shrink: 0;
+		font-size: 1.5em;
+		height: 1em;
+		margin-right: 0.6em;
+		opacity: 1;
+		width: 1em;
+	}
+
+	&--is-invalid {
+		background-position: #{map.get($icons, "error")};
+	}
+
+	&--is-invalid:not(&--is-expanded) {
+		animation: nelio-content-attention-pulse 2s infinite;
+	}
+
+	&--is-warning {
+		background-position: #{map.get($icons, "warning")};
+	}
+
+	&__header {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		min-height: 4em;
+
+		&-content {
+			align-items: center;
+			display: flex;
+			flex-grow: 1;
+			justify-content: space-between;
+			margin: 1em;
+
+			&-activation-toggle * {
+				margin-bottom: 0 !important;
+			}
+
+			&-title {
+				flex-grow: 1;
+				font-size: 1.2em;
+				font-weight: 700;
+			}
+
+			&-icons {
+				display: flex;
+				column-gap: 5px;
+
+				> * {
+					color: #fff;
+					font-size: 2em;
+				}
+			}
+
+			&-remaining-profiles {
+				background-color: $layout-colors__border;
+				border-radius: 50%;
+				box-sizing: border-box;
+				color: $layout-colors__foreground;
+				font-size: 1em;
+				font-weight: 600;
+				padding-top: 3px;
+				text-align: center;
+				width: 2em;
+			}
+		}
+
+		&-toggle {
+			margin-right: 0.5em;
+
+			> *:focus:not(:disabled) {
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__body {
+		border-top: 1px solid $layout-colors__border;
+		display: flex;
+
+		&-content {
+			flex-grow: 1;
+			padding: 1em;
+		}
+	}
+
+	&__sidebar {
+		align-items: center;
+		background-color: $layout-colors__border;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0;
+		width: 4em;
+
+		&-item {
+			align-items: center;
+			box-sizing: border-box;
+			color: $layout-colors__border;
+			cursor: pointer;
+			display: flex;
+			font-size: 2em;
+			height: 2em;
+			justify-content: center;
+			padding: 0 7px;
+			vertical-align: middle;
+			width: 100%;
+
+			&:not(&--active):not(&--is-spacer):hover {
+				color: $layout-colors__border--is-subtle;
+				background-color: $layout-colors__border--is-subtle;
+			}
+
+			&--active {
+				color: #fff;
+				background-color: #fff;
+				cursor: auto;
+			}
+
+			> .dashicon {
+				color: $layout-colors__foreground;
+			}
+
+			&--is-spacer {
+				cursor: default;
+				flex-grow: 1;
+			}
+		}
+
+		.nelio-content-profile {
+
+			&__icon-and-indicator {
+				position: relative;
+			}
+
+			&__profile-icon {
+				border-radius: 50%;
+
+				&--is-invalid:not(&--is-selected) {
+					animation: nelio-content-attention-pulse 2s infinite;
+				}
+			}
+
+			&__profile-indicator {
+				background-clip: content-box;
+				background-image: $icon-map;
+				background-size: $icon-map-size;
+				border: 0.15em solid transparent;
+				border-radius: 50%;
+				bottom: -0.4em;
+				box-sizing: content-box;
+				content: "";
+				display: block;
+				font-size: 0.6em;
+				height: 1em;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				right: -0.4em;
+				width: 1em;
+
+				&--is-invalid {
+					background-position: #{map.get($icons, "error")};
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&--inactive {
+		filter: saturate(0);
+		opacity: 0.6;
+
+		.nelio-content-automation-group__header-content-title {
+			font-style: italic;
+		}
+	}
+
+	&--disabled {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+
+	@keyframes nelio-content-attention-pulse {
+
+		0% {
+			box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+		}
+
+		70% {
+			box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+		}
+
+		100% {
+			box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.nelio-content-social-message-publish-dialog {
+
+	&__content {
+		max-width: 40em;
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 2em;
+
+		> * {
+			margin-left: 0.5em;
+		}
+	}
+}

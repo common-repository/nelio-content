@@ -1,0 +1,81 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-plan {
+
+	display: flex;
+	flex-direction: column;
+	grid-area: plan;
+	height: auto !important;
+	width: 100%;
+
+	&__content {
+		flex-grow: 1;
+		padding: 1em;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 0.6em;
+	}
+
+	&__period {
+		background: $layout-colors__background;
+		border: 1px solid $layout-colors__border;
+		border-radius: 2px;
+		color: $layout-colors__foreground;
+		font-size: 10px;
+		font-weight: 400;
+		margin-left: 4px;
+		padding: 3px 5px;
+		position: relative;
+		text-decoration: none;
+		text-shadow: none;
+		top: -2px;
+	}
+
+	&__state-canceled {
+		background: $layout-colors__foreground--is-warning;
+		border: 1px solid $layout-colors__foreground--is-warning;
+		border-radius: 2px;
+		color: $layout-colors__background;
+		font-size: 10px;
+		font-weight: 400;
+		margin-left: 4px;
+		padding: 3px 5px;
+		position: relative;
+		overflow: hidden;
+		text-decoration: none;
+		text-shadow: none;
+		top: -2px;
+	}
+
+	&__renewal {
+		font-size: 1.1em;
+		margin-bottom: 0.6em;
+
+		&-amount {
+			font-weight: 700;
+		}
+
+		&-date {
+			background: $layout-colors__background--is-emphasized;
+		}
+	}
+
+	&__actions {
+		align-items: baseline;
+		background: $layout-colors__background;
+		border-top: 1px solid $layout-colors__border;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding: 0.5em;
+		text-align: right;
+
+		> * {
+			margin-left: 0.5em;
+		}
+	}
+
+}

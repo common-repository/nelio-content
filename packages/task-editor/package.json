@@ -1,0 +1,32 @@
+{
+	"name": "@nelio-content/task-editor",
+	"version": "1.0.0",
+	"description": "Task editor.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"dependencies": {
+		"@nelio-content/components": "file:../components",
+		"@nelio-content/data": "file:../data",
+		"@nelio-content/date": "file:../date",
+		"@nelio-content/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@safe-wordpress/api-fetch": "file:../safe-wordpress/api-fetch",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"lodash": "^4.17.21",
+		"ts-brand": "^0.0.2"
+	}
+}

@@ -1,0 +1,44 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-editorial-comments-comment {
+	display: flex;
+	flex-direction: row;
+	margin-top: 1em;
+
+	&--is-mine {
+		justify-content: flex-end;
+		text-align: right;
+	}
+
+	&__author-icon {
+		font-size: 2em;
+		margin-right: 0.5rem;
+	}
+
+	&__bubble {
+		background: $layout-colors__background--is-emphasized;
+		border-radius: 0.5em;
+		border-top-left-radius: 0;
+		word-break: break-word;
+		display: inline-block;
+		max-width: 45em;
+		width: auto;
+		padding: 1em;
+		text-align: left;
+
+		&--is-mine {
+			border-radius: 0.5em;
+			border-top-right-radius: 0;
+		}
+	}
+
+	&__extra {
+		color: $layout-colors__foreground--is-blurred;
+		font-size: 0.9em;
+		margin-top: 0.5em;
+
+		&--is-mine {
+			text-align: right;
+		}
+	}
+}

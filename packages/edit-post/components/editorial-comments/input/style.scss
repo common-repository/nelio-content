@@ -1,0 +1,14 @@
+.nelio-content-editorial-comments-input {
+	margin-top: 1em;
+
+	&__textarea {
+
+		* {
+			margin: 0 !important;
+		}
+
+		textarea {
+			height: 4em;
+		}
+	}
+}

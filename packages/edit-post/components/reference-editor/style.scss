@@ -1,0 +1,25 @@
+.nelio-content-reference-editor {
+
+	&__section-title {
+		margin-top: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__url {
+		font-size: 0.9em;
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+
+		> * {
+			margin-right: 0.5em;
+		}
+
+		> :last-child {
+			margin-right: 0;
+		}
+	}
+}

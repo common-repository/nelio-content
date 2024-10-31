@@ -1,0 +1,18 @@
+.nelio-content-profile-settings-dialog {
+	max-width: 40em;
+
+	&__title {
+		font-weight: 700;
+		margin-bottom: 0.5em;
+	}
+
+	&__actions {
+		margin-top: 2em;
+		text-align: right;
+		width: 100%;
+
+		> * {
+			margin-left: 0.5em;
+		}
+	}
+}

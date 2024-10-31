@@ -1,0 +1,15 @@
+.nelio-content-loading-modal {
+
+	&__content {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__actions {
+		margin-top: 2em;
+		text-align: right;
+		width: 100%;
+	}
+}

@@ -1,0 +1,268 @@
+@use "sass:map";
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nelio-content-multiple-profile-selector {
+
+	$profile-spacing: 6px;
+
+	&__network-input-field,
+	&__profile-input-field {
+		background: none !important;
+		border: none !important;
+		border-radius: 0 !important;
+		bottom: 0;
+		box-shadow: none !important;
+		color: transparent;
+		cursor: pointer !important;
+		height: 100% !important;
+		left: 0;
+		margin: 0 !important;
+		overflow: hidden;
+		padding: 0 !important;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100% !important;
+		z-index: 1;
+
+		&::before {
+			display: none !important;
+		}
+	}
+
+	&__network,
+	&__profile {
+
+		&--is-disabled &-input-field {
+			cursor: default !important;
+		}
+	}
+
+	&__networks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 0 $profile-spacing;
+		padding: 0;
+	}
+
+	&__network {
+		display: inline-block;
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 32px;
+		height: 1em;
+		margin: $profile-spacing;
+		position: relative;
+		width: 1em;
+
+		&::before {
+			background-image: $network-map;
+			background-size: $network-map-size;
+			border-radius: 2px;
+			content: "";
+			display: block;
+			height: 1em;
+			left: 0;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			width: 1em;
+		}
+
+		@each $network, $position in $network-icons {
+
+			&--is-#{$network}-active {
+				outline: 3px solid #{map.get($network-css-colors, $network)};
+				outline-offset: 2px;
+				border-radius: 1px;
+			}
+
+			&--is-#{$network}::before {
+				background-position: #{$position} #{map.get($network-icon-colors, "grey-on-white")};
+			}
+
+			&--is-#{$network}:not(&--is-disabled):focus-within::before,
+			&--is-#{$network}:not(&--is-disabled):hover::before,
+			&--is-#{$network}-active::before {
+				background-position: #{$position} #{map.get($network-icon-colors, "colored")};
+				opacity: 0.7;
+			}
+
+			&--is-#{$network}-selected:not(&--is-disabled):focus-within::before,
+			&--is-#{$network}-selected:not(&--is-disabled):hover::before,
+			&--is-#{$network}-selected::before {
+				background-position: #{$position} #{map.get($network-icon-colors, "colored")};
+				opacity: 1;
+			}
+
+			&--is-#{$network}-selected#{&}--is-disabled::before,
+			&--is-#{$network}-active#{&}--is-disabled::before {
+				background-position: #{$position} #{map.get($network-icon-colors, "white-on-grey")};
+			}
+		}
+	}
+
+	&__profiles {
+		background: $wordpress-colors__button-background--is-secondary;
+		border: 1px solid $wordpress-colors__input-border;
+		border-radius: 2px;
+		line-height: 0;
+		margin: 0;
+		margin-bottom: 1em;
+		padding: 1em;
+		padding-bottom: 0;
+
+		&--is-disabled {
+			border-color: $wordpress-colors__input-border--is-disabled;
+		}
+	}
+
+	&--has-text-support #{&}__profiles {
+		border-bottom: none;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-bottom: 0;
+	}
+
+	&__profile-indicator {
+		background-image: $icon-map;
+		background-size: $icon-map-size;
+		border: 3px solid $layout-colors__background--is-emphasized;
+		border-radius: 50%;
+		bottom: -0.2em;
+		box-sizing: content-box;
+		content: "";
+		display: block;
+		font-size: 20px;
+		height: 1em;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		right: -0.2em;
+		width: 1em;
+
+		&--is-selected {
+			background-position: #{map.get($icons, "tick")};
+			opacity: 1;
+		}
+
+		&--has-1-selected-targets {
+			background-position: #{map.get($icons, "one")};
+			opacity: 1;
+		}
+
+		&--has-2-selected-targets {
+			background-position: #{map.get($icons, "two")};
+			opacity: 1;
+		}
+
+		&--has-3-selected-targets {
+			background-position: #{map.get($icons, "three")};
+			opacity: 1;
+		}
+
+		&--has-4-selected-targets {
+			background-position: #{map.get($icons, "four")};
+			opacity: 1;
+		}
+
+		&--has-5-selected-targets {
+			background-position: #{map.get($icons, "five")};
+			opacity: 1;
+		}
+
+		&--has-6-selected-targets {
+			background-position: #{map.get($icons, "six")};
+			opacity: 1;
+		}
+
+		&--has-7-selected-targets {
+			background-position: #{map.get($icons, "seven")};
+			opacity: 1;
+		}
+
+		&--has-8-selected-targets {
+			background-position: #{map.get($icons, "eight")};
+			opacity: 1;
+		}
+
+		&--has-9-selected-targets {
+			background-position: #{map.get($icons, "nine")};
+			opacity: 1;
+		}
+
+		&--has-9-plus-selected-targets {
+			background-position: #{map.get($icons, "over-nine")};
+			opacity: 1;
+		}
+
+	}
+
+	&__profile {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		margin-right: 1em;
+		margin-bottom: 1em;
+
+		&:hover:not(&--is-disabled) &-indicator {
+			background-position: #{map.get($icons, "add")};
+			opacity: 1;
+		}
+
+		&--is-selected:hover:not(&--is-disabled) &-indicator {
+			background-position: #{map.get($icons, "remove")};
+			opacity: 1;
+		}
+
+		&--is-multi-target:hover:not(&--is-disabled) &-indicator {
+			background-position: #{map.get($icons, "edit")};
+			opacity: 1;
+		}
+
+		&--is-disabled {
+			filter: saturate(1);
+			opacity: 0.6;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__profile-icon {
+		filter: saturate(0.2);
+		font-size: 42px;
+		opacity: 0.4;
+
+		&--is-selected {
+			filter: saturate(1);
+			opacity: 1;
+		}
+	}
+
+	&__profiles:not(:hover) #{&}__profile:first-child:not(:hover):not(:focus) #{&}__profile-icon--is-pulsing {
+		animation: nelio-content-pulsing-profile 1.2s infinite;
+	}
+}
+
+@keyframes nelio-content-pulsing-profile {
+
+	0% {
+		filter: saturate(0.2);
+		opacity: 0.5;
+	}
+
+	50% {
+		filter: saturate(1);
+		opacity: 1;
+	}
+
+	100% {
+		filter: saturate(0.2);
+		opacity: 0.5;
+	}
+}

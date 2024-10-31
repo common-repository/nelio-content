@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "colors";
+@use "variables";
+
+@mixin background-letters($selector) {
+
+	@at-root #{$selector} {
+		background-image: variables.$letters-map;
+		background-size: variables.$letters-map-size;
+		background-position: variables.$letters-map__no-letter;
+	}
+
+	@each $letter, $position in variables.$letters {
+
+		@at-root #{$selector}--is-letter-#{$letter} {
+			background-position: #{$position};
+		}
+	}
+}
+
+@mixin social-networks($selector) {
+
+	@at-root #{$selector} {
+		background-image: variables.$network-map;
+		background-size: variables.$network-map-size;
+	}
+
+	@each $icon, $position in variables.$network-icons {
+
+		@at-root #{$selector}--is-#{$icon} {
+			background-position: #{$position} #{map.get(variables.$network-icon-colors, "colored")};
+		}
+
+		@at-root #{$selector}--is-#{$icon}-disabled {
+			background-position: #{$position} #{map.get(variables.$network-icon-colors, "white-on-grey")};
+		}
+
+		@at-root #{$selector}--is-mini-#{$icon} {
+			background-position: #{$position} #{map.get(variables.$network-icon-colors, "mini-active")};
+		}
+
+		@at-root #{$selector}--is-mini-#{$icon}-disabled {
+			background-position: #{$position} #{map.get(variables.$network-icon-colors, "mini-disabled")};
+		}
+	}
+}

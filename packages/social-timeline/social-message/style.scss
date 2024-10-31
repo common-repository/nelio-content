@@ -1,0 +1,160 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-message {
+
+	background: $social-colors__background;
+	cursor: default;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding: 1em;
+	position: relative;
+	user-select: none;
+
+	.nelio-content-social-profile-icon {
+		color: $social-colors__background;
+	}
+
+	&--is-auto {
+		background: $social-colors__background--is-auto;
+		font-style: italic;
+
+		.nelio-content-social-profile-icon {
+			color: $social-colors__background--is-auto;
+		}
+	}
+
+	&--is-free-preview {
+
+		> * {
+			filter: blur(0.2px);
+			opacity: 0.5;
+		}
+	}
+
+	&__free-preview-button {
+		cursor: pointer !important;
+		position: absolute !important;
+		background: none !important;
+		border-radius: 0 !important;
+		border: none !important;
+		filter: none !important;
+		height: 100% !important;
+		left: 0 !important;
+		opacity: 1 !important;
+		top: 0 !important;
+		width: 100% !important;
+	}
+
+	&__premium-badge {
+		align-items: center;
+		display: flex;
+		position: absolute;
+		right: 0.5em;
+		top: 0.5em;
+
+		.dashicon {
+			margin-right: -0.2em !important;
+		}
+	}
+
+	&--is-error {
+		background: $social-colors__background--is-error;
+
+		.nelio-content-social-profile-icon {
+			color: $social-colors__background--is-error;
+		}
+	}
+
+	&__image-type-icon,
+	&__video-type-icon {
+		bottom: -0.5em;
+		font-size: 5em;
+		height: 1em;
+		opacity: 0.2;
+		position: absolute;
+		right: 0;
+		transform: rotate(-10deg);
+		width: 1em;
+	}
+
+	&__profile-and-location {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__profile-icon {
+		font-size: 1.5em;
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 1em;
+	}
+
+	&__location {
+		flex-grow: 1;
+		margin-left: 1em;
+	}
+
+	&__content-wrapper {
+		margin: 0.5em 0;
+		padding-left: var(--nelio-content-timeline-indentation, 0);
+	}
+
+	&__actual-content {
+
+		&__link,
+		&__hash,
+		&__mention {
+			color: $component-colors__link;
+		}
+
+		&__link {
+			word-break: break-all;
+		}
+	}
+
+	&__recurrence,
+	&__date {
+		color: $layout-colors__foreground--is-blurred;
+		padding-left: var(--nelio-content-timeline-indentation, 0);
+
+		svg,
+		.dashicon {
+			height: 1em;
+			margin-right: 0.2em;
+			width: 1em;
+		}
+	}
+
+	&__actions {
+		box-sizing: border-box;
+		display: none;
+		flex-direction: row-reverse;
+		font-style: normal;
+		padding: 0 1em 1em;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+
+		> span {
+			color: $layout-colors__foreground--is-blurred;
+			text-align: center;
+			width: 1em;
+		}
+	}
+
+	&__date--is-deleting,
+	&:not(#{&}--is-free-preview):hover &__date {
+		visibility: hidden;
+	}
+
+	&__actions--is-deleting,
+	&:not(#{&}--is-free-preview):hover &__actions {
+		display: flex;
+	}
+
+	&:not(#{&}--is-free-preview):hover &__image-type-icon {
+		opacity: 0.05;
+	}
+}

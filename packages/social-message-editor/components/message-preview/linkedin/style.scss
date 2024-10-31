@@ -1,0 +1,121 @@
+.nelio-content-social-message-linkedin-preview {
+
+	background: #fff;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 8px;
+	color: #212121;
+	cursor: default;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin: 1em 1.5em;
+	padding: 0;
+	user-select: none;
+
+	&__profile-and-date {
+		padding: 15px;
+		padding-bottom: 0;
+	}
+
+	.nelio-content-social-profile-icon {
+		float: left;
+		font-size: 36px;
+		height: 36px;
+		margin-right: 10px;
+		width: 36px;
+	}
+
+	&__name-and-date {
+		margin-top: 3px;
+	}
+
+	&__display-name {
+		color: #222;
+		font-weight: 700;
+		line-height: 1.25;
+	}
+
+	&__date {
+		color: #666;
+	}
+
+	&__image {
+		height: 180px;
+		margin: 10px 0 15px;
+		object-fit: cover;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+
+}
+
+
+/* MESSAGE */
+
+.nelio-content-social-message-linkedin-preview .nelio-content-computed-text-preview {
+
+	color: #222;
+	cursor: auto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 0;
+	padding: 1.5em 15px 1em;
+	user-select: auto;
+
+	&--empty {
+		opacity: 0.6;
+	}
+
+	&__mention {
+		color: #222;
+	}
+
+	&__link,
+	&__hash {
+		color: #0a66c2;
+		font-weight: 700;
+	}
+
+	&__link:last-child {
+		display: none;
+	}
+}
+
+
+/* SHARED POST */
+
+.nelio-content-linkedin-shared-link {
+
+	margin: 0 0 15px;
+
+	&__image {
+		height: 180px;
+		margin: 10px 0 0;
+		object-fit: cover;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	&__content {
+		background: #eef3f8;
+		margin-top: -5px;
+		padding: 10px;
+	}
+
+	&__title {
+		color: #111;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.2;
+		margin-bottom: 0.5em;
+	}
+
+	&__signature {
+		color: #666;
+		font-weight: 400;
+	}
+
+}

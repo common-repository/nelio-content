@@ -1,0 +1,61 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-link-reference {
+
+	padding: 0.5em 0;
+
+	&__extra,
+	&__link,
+	&__advisor {
+		color: $layout-colors__foreground--is-blurred;
+		font-size: 0.9em;
+	}
+
+	&__title svg,
+	&__link svg {
+		display: none;
+	}
+
+	&__link {
+		overflow: hidden;
+		position: relative;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__extra > * {
+		display: inline-block;
+
+		&::before {
+			display: inline-block;
+			content: "•";
+			margin: 0 0.3em;
+		}
+
+		&:first-child::before {
+			display: none;
+		}
+	}
+
+	&__contact svg {
+		display: none;
+	}
+
+	&__contact &__contact-icon {
+		display: inline-block;
+		font-size: 1rem;
+		height: 1em;
+		text-decoration: none;
+		width: 1em;
+	}
+
+	&__actions {
+		color: $layout-colors__foreground--is-blurred;
+		text-align: right;
+		visibility: hidden;
+	}
+
+	&:hover &__actions {
+		visibility: visible;
+	}
+}

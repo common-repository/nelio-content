@@ -1,0 +1,70 @@
+.nelio-content-social-char-counter {
+
+	background: #fff;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	&__count {
+		color: #bbb;
+		font-size: 10px;
+		height: 24px;
+		line-height: 24px;
+		opacity: 0;
+		position: absolute;
+		text-align: center;
+		width: 24px;
+		transition: color 200ms ease-in-out, opacity 200ms ease-in-out;
+
+		&--is-warning {
+			opacity: 1;
+		}
+
+		&--is-error {
+			color: #e0245e;
+			opacity: 1;
+		}
+
+	}
+
+	&__circle {
+		height: 24px;
+		transform: rotate(-90deg);
+		width: 24px;
+	}
+
+	&__circle-base {
+		stroke: #ccd6dd;
+	}
+
+	&__circle-arc {
+		stroke: #1da1f2;
+
+		&--is-warning {
+			stroke: #ffad1f;
+		}
+
+		&--is-error {
+			stroke: #e0245e;
+			animation: nelio-content-social-char-counter-animation 300ms ease-in-out;
+			animation-iteration-count: 1;
+		}
+	}
+
+}
+
+@keyframes nelio-content-social-char-counter-animation {
+
+	0% {
+		stroke-width: 2;
+	}
+
+	50% {
+		stroke-width: 4;
+	}
+
+	100% {
+		stroke-width: 2;
+	}
+}

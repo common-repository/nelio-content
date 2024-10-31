@@ -1,0 +1,16 @@
+.nelio-content-task-filters {
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__right-action {
+		text-align: right;
+	}
+
+	&__assignee {
+		margin-top: 2em;
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "@nelio-content/data",
+	"version": "1.0.0",
+	"description": "General data.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"dependencies": {
+		"@nelio-content/date": "file:../date",
+		"@nelio-content/networks": "file:../networks",
+		"@nelio-content/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.0",
+		"@safe-wordpress/api-fetch": "file:../safe-wordpress/api-fetch",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/compose": "file:../safe-wordpress/compose",
+		"@safe-wordpress/core-data": "file:../safe-wordpress/core-data",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/dom-ready": "file:../safe-wordpress/dom-ready",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/hooks": "file:../safe-wordpress/hooks",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"@safe-wordpress/url": "file:../safe-wordpress/url",
+		"ical-expander": "^3.1.0",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"ts-brand": "^0.0.2",
+		"uuid": "^8.3.2",
+		"zod": "^3.21.4"
+	}
+}

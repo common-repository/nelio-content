@@ -1,0 +1,63 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-subscription-required-page {
+	background: $layout-colors__background;
+	border: 1px solid $layout-colors__border;
+	border-radius: 2px;
+	height: fit-content;
+	margin: 2em auto;
+	max-width: 40em;
+	position: relative;
+	width: calc(100% - 2em);
+
+	> * {
+		padding: 3em;
+	}
+
+	&__logo {
+		margin: 0 auto 2em;
+		width: 20em;
+
+		.full-logo_svg__nelio-content-logo-dark,
+		.nelio-content-logo-dark {
+			fill: $components-colors__logo--is-dark;
+		}
+
+		.full-logo_svg__nelio-content-logo-light,
+		.nelio-content-logo-light {
+			fill: $components-colors__logo--is-light;
+		}
+	}
+
+	&__button-wrapper {
+		text-align: center;
+	}
+
+	&__subscribe-button {
+		border-radius: 4px;
+		font-size: 1.2em;
+		margin-top: 1em;
+		padding: 1.5em 2em;
+	}
+
+	&__extra-features {
+		margin-top: 2em;
+		padding-top: 2em;
+		border-top: 1px solid $layout-colors__border--is-subtle;
+
+		> p:first-child {
+			margin-top: 0;
+		}
+
+		li {
+			margin-left: 2em;
+			/* stylelint-disable function-url-quotes */
+			list-style-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 1792 1792'%3E%3Cpath fill='%2377B227' d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68'/%3E%3C/svg%3E");
+			/* stylelint-enable function-url-quotes */
+
+			&::marker {
+				font-size: 2em;
+			}
+		}
+	}
+}

@@ -1,0 +1,134 @@
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+
+.nelio-content-analytics-post {
+	background: $layout-colors__background;
+	border: 1px solid $layout-colors__border;
+	display: grid;
+	padding: 0;
+	margin: 1em 0;
+
+	grid-template-areas:
+		"post"
+		"pageviews"
+		"engagement"
+		"social-queue";
+
+	$sections: post pageviews engagement social-queue;
+
+	@each $section in $sections {
+
+		&__#{$section} {
+			grid-area: #{$section};
+			padding: 1em;
+		}
+	}
+
+	&__pageviews,
+	&__engagement,
+	&__social-queue {
+		border-top: 1px solid $layout-colors__border--is-subtle;
+	}
+
+	@media ( min-width: $break-medium ) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"post      post       post"
+			"pageviews engagement social-queue";
+
+		&--has-no-pageviews {
+			grid-template-columns: 1fr 1fr;
+			grid-template-areas:
+				"post       post"
+				"engagement social-queue";
+		}
+
+		&__pageviews,
+		&__engagement,
+		&__social-queue {
+			border: none;
+			border-top: 1px solid $layout-colors__border--is-subtle;
+		}
+
+		&__pageviews,
+		&__engagement {
+			border-right: 1px solid $layout-colors__border--is-subtle;
+		}
+	}
+
+	@media ( min-width: $break-wide ) {
+		grid-template-columns: 1fr 18em 18em 14em;
+		grid-template-areas: "post pageviews engagement social-queue";
+
+		&__pageviews,
+		&__engagement,
+		&__social-queue {
+			border: none;
+			border-left: 1px solid $layout-colors__border--is-subtle;
+		}
+	}
+
+	&__post {
+		display: grid;
+		grid-template-columns: 120px 1fr;
+		grid-template-rows: 1fr auto auto;
+		grid-template-areas:
+			"image title"
+			"image excerpt"
+			"image author"
+			"image details";
+	}
+
+	$sections: image excerpt title author details;
+
+	@each $section in $sections {
+
+		&__#{$section} {
+			grid-area: #{$section};
+		}
+	}
+
+	&__post > * {
+		margin-bottom: 0.5rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__post > :last-child {
+		margin-bottom: 0;
+	}
+
+	&__title {
+		font-size: 1.3em;
+
+		.components-external-link svg {
+			display: none;
+		}
+	}
+
+	&__actual-image {
+		background-color: $component-colors__placeholder;
+		background-position: center;
+		background-size: cover;
+		height: 100px;
+		width: 100px;
+	}
+
+	&__excerpt {
+		color: $layout-colors__foreground--is-blurred;
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+	}
+
+	&__author-icon {
+		font-size: 2em;
+	}
+
+	&__author-name {
+		margin-left: 0.5em;
+	}
+}

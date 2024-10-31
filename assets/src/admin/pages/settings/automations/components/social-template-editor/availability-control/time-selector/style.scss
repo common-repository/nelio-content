@@ -1,0 +1,22 @@
+.nelio-content-social-template-editor {
+
+	&__time-selector {
+
+		.components-base-control,
+		.components-base-control .components-base-control__field {
+			margin-bottom: 0;
+		}
+	}
+
+	&__positive-hours-selector {
+		margin: 0;
+		width: 5em;
+	}
+
+	&__reset-time-button {
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+
+}
+

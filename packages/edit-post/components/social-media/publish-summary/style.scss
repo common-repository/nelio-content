@@ -1,0 +1,12 @@
+.nelio-content-social-media-publish-summary {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	margin-right: 1em;
+
+	&__icon {
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 2em;
+	}
+}

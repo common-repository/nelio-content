@@ -1,0 +1,7 @@
+dist
+.lando
+vendor
+node_modules
+webpack.config.js
+.eslintrc.js
+includes/lib/settings/assets/js/settings.js

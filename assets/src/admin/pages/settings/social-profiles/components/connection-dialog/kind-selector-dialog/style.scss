@@ -1,0 +1,36 @@
+.nelio-content-kind-selector-dialog {
+	max-width: 40em;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	&__connect-button,
+	&__connect-button.components-button {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin: 1rem;
+		font-size: 1.5em;
+		text-decoration: none;
+
+		&[disabled] {
+			filter: saturate(0);
+		}
+	}
+
+	&__profile-icon {
+		font-size: 4em;
+		margin-bottom: 0.5rem;
+	}
+
+	&__alternative {
+		text-align: center;
+	}
+
+	&__notice {
+		font-style: italic;
+	}
+}

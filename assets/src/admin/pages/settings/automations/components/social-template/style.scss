@@ -1,0 +1,98 @@
+@use "sass:map";
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nelio-content-social-template {
+	border-bottom: 1px solid $layout-colors__border--is-subtle;
+	display: grid;
+	grid-template-columns: 1fr 5em;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"text  icon"
+		"extra icon";
+	padding: 1em;
+	position: relative;
+
+	&--is-network::after {
+		background-color: var(--wp-admin-theme-color, $layout-colors__foreground);
+		border-radius: 3px;
+		color: $layout-colors__background;
+		content: attr(data-template-type);
+		display: block;
+		padding: 2px 5px;
+		position: absolute;
+		right: 2px;
+		top: 2px;
+		transform-origin: top right;
+		transform: scale(0.8);
+	}
+
+	&__extra--is-invalid::before {
+		background-image: $icon-map;
+		background-position: #{map.get($icons, "error")};
+		background-size: $icon-map-size;
+		border-radius: 50%;
+		content: "";
+		display: inline-block;
+		height: 1em;
+		margin-right: 0.3em;
+		transform: translateY(1px);
+		width: 1em;
+	}
+
+	&__filters--is-invalid {
+		color: $wordpress-colors__error-color;
+	}
+
+	&__text {
+		grid-area: text;
+	}
+
+	&__extra {
+		align-items: center;
+		color: $layout-colors__foreground--is-blurred;
+		display: inline;
+		font-size: 0.9em;
+		grid-area: extra;
+
+		.components-button.is-link {
+			font-size: 1em;
+		}
+	}
+
+	&__actions {
+		display: inline-flex;
+		gap: 0.2em;
+		opacity: 0;
+
+		> span:first-child {
+			margin-left: 0.5em;
+			margin-right: 0.3em;
+		}
+	}
+
+	&__code-tag {
+		color: $component-colors__template-placeholder;
+		font-family: monospace;
+	}
+
+	&__newline-tag {
+		color: $layout-colors__foreground--is-blurred;
+	}
+
+	&__icon {
+		align-self: center;
+		color: $layout-colors__background;
+		font-size: 2em;
+		grid-area: icon;
+		justify-self: flex-end;
+	}
+
+	&:hover &__actions {
+		opacity: 1;
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+}

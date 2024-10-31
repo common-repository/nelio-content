@@ -1,0 +1,13 @@
+.nelio-content-analytics-post-filter {
+	display: flex;
+	flex-direction: row;
+
+	&__criterion {
+		margin-left: 0.5em;
+		min-width: 10em;
+
+		> * {
+			width: 100%;
+		}
+	}
+}

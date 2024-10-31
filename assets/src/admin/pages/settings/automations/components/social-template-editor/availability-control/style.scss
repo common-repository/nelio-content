@@ -1,0 +1,31 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-availability-control {
+
+	&__options {
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		justify-content: space-between;
+		min-height: 5em;
+		width: 100%;
+
+		> .components-base-control {
+			flex-grow: 1;
+		}
+
+		.components-base-control + .components-base-control {
+			margin: 0;
+		}
+
+		&--reshare {
+			flex-direction: column;
+		}
+
+	}
+
+	&__error {
+		color: $wordpress-colors__error-color;
+		margin-bottom: 1em;
+	}
+}

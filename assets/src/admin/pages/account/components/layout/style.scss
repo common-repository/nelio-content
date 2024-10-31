@@ -1,0 +1,57 @@
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+
+#nelio-content-page .components-notice {
+	margin: 0;
+}
+
+.nelio-content-account-container {
+
+	margin-top: 1em;
+
+	&__box {
+		background: $layout-colors__background;
+		border: 1px solid $layout-colors__border;
+		border-radius: 2px;
+		height: fit-content;
+		margin: 0;
+		position: relative;
+	}
+
+	&--is-agency-summary,
+	&--is-invitation,
+	&--is-subscribed {
+		display: grid;
+		grid-template-areas: "plan" "account";
+		grid-gap: 1em;
+
+		@include break-wide {
+			grid-template-areas: "plan account";
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&--is-subscribed {
+		grid-template-areas: "plan" "account" "billing";
+
+		@include break-wide {
+			grid-template-areas: "plan account" "billing billing";
+		}
+	}
+
+	&--is-subscribed#{&}--is-multi-site {
+		grid-template-areas: "plan" "account" "sites" "billing";
+
+		@include break-wide {
+			grid-template-areas: "plan account" "sites billing";
+		}
+	}
+
+	&--is-invitation#{&}--is-multi-site {
+		grid-template-areas: "plan" "account" "sites";
+
+		@include break-wide {
+			grid-template-areas: "plan account" "sites sites";
+		}
+	}
+}

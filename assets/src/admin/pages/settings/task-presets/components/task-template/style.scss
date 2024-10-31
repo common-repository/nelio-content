@@ -1,0 +1,56 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-task-template {
+	border-left: 0.5em solid $task-colors__actual-color;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+
+
+	&--is-red {
+		border-color: $task-colors__actual-color--is-red;
+	}
+
+	&--is-orange {
+		border-color: $task-colors__actual-color--is-orange;
+	}
+
+	&--is-yellow {
+		border-color: $task-colors__actual-color--is-yellow;
+	}
+
+	&--is-green {
+		border-color: $task-colors__actual-color--is-green;
+	}
+
+	&--is-cyan {
+		border-color: $task-colors__actual-color--is-cyan;
+	}
+
+	&--is-blue {
+		border-color: $task-colors__actual-color--is-blue;
+	}
+
+	&--is-purple {
+		border-color: $task-colors__actual-color--is-purple;
+	}
+
+
+	&__extra {
+		color: $layout-colors__foreground--is-blurred;
+		min-height: 1.5em;
+	}
+
+	&__actions {
+		display: none;
+		min-height: 1.5em;
+	}
+
+	&:hover #{&}__extra {
+		display: none;
+	}
+
+	&:hover #{&}__actions {
+		display: flex;
+		gap: 0.5em;
+	}
+}

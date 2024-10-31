@@ -1,0 +1,12 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-profile-section-title {
+	align-items: center;
+	display: flex;
+
+	&__profile-count {
+		color: $layout-colors__foreground--is-blurred;
+		font-weight: 600;
+		margin-left: 1em;
+	}
+}

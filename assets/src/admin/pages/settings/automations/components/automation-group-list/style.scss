@@ -1,0 +1,17 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-automation-group-list {
+	margin-top: 2em;
+
+	&__error {
+		margin: 2em 0;
+		color: $wordpress-colors__error-color;
+	}
+
+	&__actions {
+		display: flex;
+		gap: 0.5em;
+		justify-content: space-between;
+		margin-top: 2em;
+	}
+}

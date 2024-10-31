@@ -1,0 +1,109 @@
+// =======================================================================
+//    Icons
+// =======================================================================
+$icon-map: url(~admin-stylesheets/images/icons.svg);
+$icon-map-size: 21em 5em;
+$icons: (
+	"pending": -1em -1em,
+	"improvable": -3em -1em,
+	"done": -5em -1em,
+
+	"one": -7em -1em,
+	"two": -9em -1em,
+	"three": -11em -1em,
+	"four": -13em -1em,
+	"five": -15em -1em,
+	"six": -17em -1em,
+	"seven": -7em -3em,
+	"eight": -9em -3em,
+	"nine": -11em -3em,
+	"over-nine": -13em -3em,
+
+	"add": -1em -3em,
+	"remove": -5em -3em,
+	"tick": -3em -3em,
+	"error": -19em -1em,
+	"warning": -19em -3em,
+
+	"rss": -17em -3em,
+	"edit": -15em -3em,
+);
+
+// =======================================================================
+//    Letters
+// =======================================================================
+$letters-map: url(~admin-stylesheets/images/letters.svg);
+$letters-map-size: 13em 11em;
+$letters-map__no-letter: -5em -9em;
+
+$letters: (
+	"a": -1em -1em,
+	"b": -3em -1em,
+	"c": -5em -1em,
+	"d": -7em -1em,
+	"e": -9em -1em,
+
+	"f": -11em -1em,
+	"g": -1em -3em,
+	"h": -3em -3em,
+	"i": -5em -3em,
+	"j": -7em -3em,
+
+	"k": -9em -3em,
+	"l": -11em -3em,
+	"m": -1em -5em,
+	"n": -3em -5em,
+	"o": -5em -5em,
+
+	"p": -7em -5em,
+	"q": -9em -5em,
+	"r": -11em -5em,
+	"s": -1em -7em,
+	"t": -3em -7em,
+
+	"u": -5em -7em,
+	"v": -7em -7em,
+	"w": -9em -7em,
+	"x": -11em -7em,
+	"y": -1em -9em,
+
+	"z": -3em -9em,
+);
+
+// =======================================================================
+//    Networks
+// =======================================================================
+$network-map: url(~admin-stylesheets/images/networks.svg);
+$network-map-size: 39em 11em;
+
+$network-icons: (
+	"bluesky": -33em,
+	"twitter": -1em,
+	"facebook": -3em,
+	"facebook-group": -5em,
+	"facebook-page": -7em,
+	"linkedin": -9em,
+	"linkedin-company": -11em,
+	"googleplus": -13em,
+	"googleplus-page": -15em,
+	"instagram": -17em,
+	"mastodon": -31em,
+	"pinterest": -19em,
+	"tumblr": -21em,
+	"gmb": -23em,
+	"gmb-location": -23em,
+	"reddit": -25em,
+	"reddit-subreddit": -25em,
+	"telegram": -29em,
+	"tiktok": -27em,
+	"threads": -35em,
+	"medium": -37em,
+);
+
+$network-icon-colors: (
+	"white-on-grey": -1em,
+	"grey-on-white": -3em,
+	"colored": -5em,
+	"mini-active": -7em,
+	"mini-disabled": -9em,
+);

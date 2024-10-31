@@ -1,0 +1,169 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-profile {
+	border-bottom: 1px solid $layout-colors__border--is-subtle;
+	display: grid;
+	grid-template-columns: 5em 1fr auto;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"icon name    frequencies"
+		"icon details frequencies"
+		"icon actions frequencies";
+	padding: 1em;
+
+	&__icon {
+		align-self: center;
+		color: $layout-colors__background;
+		font-size: 3em;
+		grid-area: icon;
+		justify-self: start;
+	}
+
+	&__name {
+		font-size: 1.2em;
+		font-weight: 700;
+		grid-area: name;
+	}
+
+	&__automation-icon {
+		margin-left: 0.5em;
+		opacity: 0.3;
+
+		& + #{&} {
+			margin-left: 0.2em;
+		}
+	}
+
+	&__details {
+		display: flex;
+		flex-direction: row;
+		font-size: 0.8em;
+		gap: 0.3em;
+		grid-area: details;
+		opacity: 0.8;
+	}
+
+	&__frequencies {
+		align-items: center;
+		align-self: center;
+		display: flex;
+		grid-area: frequencies;
+
+		input[type="number"] {
+			max-width: 4em;
+			margin-left: 0.5em;
+		}
+
+		&--is-auto .dashicon {
+			font-size: 2em;
+			height: 1em;
+			width: 1em;
+		}
+	}
+
+	&__frequency-toggler,
+	&__frequency-toggler.components-button {
+		margin-left: 1em;
+		text-decoration: none;
+	}
+
+	&__frequency-control {
+		margin-left: 1em;
+		display: flex;
+		align-items: center;
+
+		&--is-unused {
+			color: $layout-colors__foreground--is-warning;
+
+			> div:first-child {
+				position: relative;
+
+				> div:first-child {
+					animation: nelio-content-profile-attention-pulse 2s infinite;
+					border-radius: 100%;
+					width: 1.5em;
+					height: 1.5em;
+					position: absolute;
+				}
+			}
+
+			input:not(:focus) {
+				border-color: $layout-colors__foreground--is-warning;
+				color: $layout-colors__foreground--is-warning;
+			}
+		}
+
+		&--is-disabled .dashicon {
+			opacity: 0.4;
+		}
+	}
+
+	&__reauthenticate-action {
+		align-items: center;
+		align-self: center;
+		grid-area: frequencies;
+	}
+
+	&__feedback {
+		color: $layout-colors__foreground--is-blurred;
+		grid-area: actions;
+	}
+
+	&__actions {
+		color: $layout-colors__foreground--is-blurred;
+		grid-area: actions;
+		visibility: hidden;
+	}
+
+	&:hover &__actions {
+		visibility: visible;
+	}
+
+	&:last-child {
+		border-bottom: none;
+	}
+
+	&--is-locked {
+		background: $layout-colors__background;
+
+		> * {
+			filter: grayscale(100%);
+			opacity: 0.5;
+		}
+	}
+
+	&--is-locked > &__feedback {
+		filter: none;
+		opacity: 1;
+	}
+
+	&--is-invalid {
+		background: $layout-colors__background;
+
+		> * {
+			opacity: 0.5;
+		}
+	}
+
+	&--is-invalid > &__reauthenticate-action {
+		opacity: 1;
+	}
+
+	@keyframes nelio-content-profile-attention-pulse {
+
+		0% {
+			background: rgba(255, 82, 82, 0.7);
+			box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+		}
+
+		70% {
+			background: rgba(255, 82, 82, 0);
+			box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+		}
+
+		100% {
+			background: rgba(255, 82, 82, 0);
+			box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+		}
+	}
+}

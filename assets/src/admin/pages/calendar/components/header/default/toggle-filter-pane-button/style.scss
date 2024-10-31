@@ -1,0 +1,31 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-toggle-filter-pane-button {
+
+	margin: 0;
+	padding: 8px;
+
+	&--has-active-filters {
+		color: $component-colors__icon-background--is-notice;
+
+		&:focus,
+		&:hover {
+			color: $component-colors__icon-background--is-notice !important;
+		}
+	}
+
+	&--is-toggled {
+		color: $wordpress-colors__toggle-foreground--is-toggled;
+		background: $wordpress-colors__toggle-background--is-toggled;
+		margin: 1px;
+		padding: 7px;
+
+		&:focus,
+		&:hover {
+			box-shadow: 0 0 0 1px $wordpress-colors__toggle-background--is-toggled, inset 0 0 0 1px $wordpress-colors__toggle-foreground--is-toggled !important;
+			color: $wordpress-colors__toggle-foreground--is-toggled !important;
+			background: $wordpress-colors__toggle-background--is-toggled !important;
+		}
+	}
+
+}

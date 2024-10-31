@@ -1,0 +1,56 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-header {
+
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 0.5em;
+	z-index: 1;
+
+	&__promo-button {
+		margin-left: 1em;
+	}
+
+	&__block {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-grow: 1;
+		flex-shrink: 1;
+		justify-content: center;
+	}
+
+	&__calendar-controls {
+		justify-content: flex-start;
+	}
+
+	&__create-item-button {
+		margin-right: 1em;
+	}
+
+	&__paused-social-publication-warning {
+		background: $component-colors__calendar-paused-background;
+		color: $component-colors__calendar-paused-foreground;
+		border-radius: 2px;
+		padding: 0.5em 1em;
+	}
+
+	&__toolbar {
+		justify-content: flex-end;
+	}
+
+	&__toolbar-button {
+		margin-left: 0.5em;
+
+		.components-dropdown-menu__toggle {
+			padding: 8px;
+		}
+	}
+
+	.components-dropdown-menu__menu {
+		padding: 0;
+	}
+
+}

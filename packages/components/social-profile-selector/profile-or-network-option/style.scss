@@ -1,0 +1,41 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-profile-or-network-option-in-profile-selector {
+	align-items: center;
+	display: flex;
+	padding: 0.5em 0.5em 0.7em;
+
+	cursor: default;
+
+	&__icon {
+		color: $layout-colors__background;
+		flex-grow: 0;
+		width: 1em;
+		font-size: 2em;
+	}
+
+	&--is-selected &__icon {
+		color: $component-colors__option-background--is-selected;
+	}
+
+	&:hover &__icon,
+	#{&}--is-focused &__icon {
+		color: $component-colors__option-background--is-focused;
+	}
+
+	&__label {
+		flex-grow: 1;
+		padding-left: 1em;
+	}
+
+	&--is-selected {
+		background: $component-colors__option-background--is-selected;
+		color: $component-colors__option-foreground--is-selected;
+	}
+
+	&:hover,
+	&--is-focused {
+		background: $component-colors__option-background--is-focused;
+		color: $component-colors__option-foreground--is-focused;
+	}
+}

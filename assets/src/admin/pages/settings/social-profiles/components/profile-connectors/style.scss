@@ -1,0 +1,17 @@
+.nelio-content-profile-connectors {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 1em;
+
+	&__connect-button {
+		font-size: 2.8em;
+		margin: 0.4rem !important;
+		padding: 0;
+
+		&--is-blurred:not(:hover) {
+			opacity: 0.6;
+		}
+	}
+}

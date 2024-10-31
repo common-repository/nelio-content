@@ -1,0 +1,35 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-automation-templates {
+
+	&__header {
+		display: flex;
+		gap: 0.4em;
+		margin-bottom: 1em;
+	}
+
+	&__title {
+		display: inline-block;
+		margin: 0;
+		margin-right: 0.5em;
+	}
+
+	&__content {
+		border: 1px solid $layout-colors__border--is-subtle;
+	}
+
+	&__current-page {
+		display: inline-flex;
+		margin: 0 0.8em;
+	}
+
+	&__pagination--title {
+		flex-grow: 1;
+		text-align: right;
+	}
+
+	&__pagination--footer {
+		text-align: center;
+		margin-top: 1em;
+	}
+}

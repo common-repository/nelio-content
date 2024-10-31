@@ -1,0 +1,87 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-task-template-colors {
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__option {
+		align-items: center;
+		display: flex;
+		height: 2rem;
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 2rem;
+	}
+
+	&__option--is-red input[type="checkbox"] {
+		background: $task-colors__actual-color--is-red !important;
+	}
+
+	&__option--is-orange input[type="checkbox"] {
+		background: $task-colors__actual-color--is-orange !important;
+	}
+
+	&__option--is-yellow input[type="checkbox"] {
+		background: $task-colors__actual-color--is-yellow !important;
+	}
+
+	&__option--is-green input[type="checkbox"] {
+		background: $task-colors__actual-color--is-green !important;
+	}
+
+	&__option--is-cyan input[type="checkbox"] {
+		background: $task-colors__actual-color--is-cyan !important;
+	}
+
+	&__option--is-blue input[type="checkbox"] {
+		background: $task-colors__actual-color--is-blue !important;
+	}
+
+	&__option--is-purple input[type="checkbox"] {
+		background: $task-colors__actual-color--is-purple !important;
+	}
+
+	&__option input[type="checkbox"],
+	&__option input[type="checkbox"]:focus,
+	&__option input[type="checkbox"]:hover,
+	&__option input[type="checkbox"]:checked {
+		background: transparent;
+		border-radius: 50%;
+		border: 0;
+		box-shadow: none;
+		height: 1.5rem;
+		margin: 0;
+		opacity: 0.4;
+		padding: 0;
+		width: 1.5rem;
+		transition: opacity 200ms ease-in-out, width 200ms ease-in-out, height 200ms ease-in-out;
+
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	&__option input[type="checkbox"]:focus,
+	&__option input[type="checkbox"]:hover,
+	&__option input[type="checkbox"]:checked {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+	&__option input[type="checkbox"]:focus,
+	&__option input[type="checkbox"]:hover {
+		opacity: 0.6;
+	}
+
+	&__option input[type="checkbox"]:checked {
+		opacity: 1;
+	}
+}

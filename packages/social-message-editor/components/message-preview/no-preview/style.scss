@@ -1,0 +1,30 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-no-preview-in-social-editor {
+
+	border: 1px solid $layout-colors__border;
+	border-radius: 2px;
+	box-sizing: border-box;
+	margin: 1em auto 2em;
+	padding: 3em 4em;
+	width: 80%;
+
+	&__title {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1em;
+		font-size: 1.2em;
+		justify-content: center;
+	}
+
+	&__icon {
+		margin-right: 0.5em;
+	}
+
+	&__explanation,
+	&__action {
+		text-align: center;
+	}
+
+}

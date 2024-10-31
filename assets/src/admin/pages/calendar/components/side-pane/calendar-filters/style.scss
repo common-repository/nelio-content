@@ -1,0 +1,37 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-filters {
+	display: flex;
+	flex-direction: column;
+
+	&__tab-panel {
+		flex-grow: 1;
+		overflow-y: auto;
+
+		.components-tab-panel__tabs {
+			background: $layout-colors__background--is-emphasized;
+			border-bottom: 1px solid $layout-colors__border--is-subtle;
+			border-top: 0;
+			display: flex;
+			margin-top: 0;
+			padding-left: 0;
+			top: 0;
+		}
+
+		.components-tab-panel__tab-content {
+			padding: 1em;
+		}
+	}
+
+	&__tab {
+		border-radius: 0;
+		flex-grow: 1;
+		justify-content: center;
+		padding: 1em 0;
+
+		&--is-active {
+			box-shadow: inset 0 -3px $wordpress-colors__tab-shadow--is-active !important;
+			transition: box-shadow 100ms linear;
+		}
+	}
+}

@@ -1,0 +1,164 @@
+// =======================================================================
+//    WordPress Defaults
+// =======================================================================
+$wordpress-colors__button-background--is-primary: #007cba;
+$wordpress-colors__button-background--is-secondary: #f3f5f6;
+
+$wordpress-colors__input-border: #7e8993;
+$wordpress-colors__input-border--is-disabled: #e6e6e6;
+
+$wordpress-colors__tab-shadow--is-active: #007cba;
+
+$wordpress-colors__toggle-foreground--is-toggled: #fff;
+$wordpress-colors__toggle-background--is-toggled: #1e1e1e;
+
+$wordpress-colors__error-color: #a00;
+
+// =======================================================================
+//    Layout
+// =======================================================================
+$layout-colors__foreground: #333;
+$layout-colors__foreground--is-blurred: #888;
+$layout-colors__foreground--is-code: #0a0;
+$layout-colors__foreground--is-warning: #c92c2c;
+
+$layout-colors__background: #fff;
+$layout-colors__background--is-emphasized: #f3f5f6;
+$layout-colors__background--is-invalid-item: #fff8f8;
+
+$layout-colors__border: #ddd;
+$layout-colors__border--is-subtle: #e2e4e7;
+$layout-colors__border--is-emphasized: #aaa;
+
+// =======================================================================
+//    Components
+// =======================================================================
+$component-colors__analytics-comment-icon: #8a0;
+
+$component-colors__calendar-hover-background--is-default: #ffc;
+$component-colors__calendar-hover-foreground--is-trash: #c92c2c;
+$component-colors__calendar-hover-background--is-trash: #faa;
+
+$component-colors__calendar-paused-foreground: #fff;
+$component-colors__calendar-paused-background: #c44;
+
+$component-colors__calendar-today-foreground: #fff;
+$component-colors__calendar-today-background: #1e1e1e;
+
+$component-colors__free-preview-foreground: #fff;
+$component-colors__free-preview-background: #1e1e1e;
+
+$component-colors__link: #0073aa;
+
+$components-colors__logo--is-dark: #0d496c;
+$components-colors__logo--is-light: #80c6dd;
+
+$component-colors__icon-background--is-notice: #e80;
+
+$component-colors__option-foreground--is-selected: #333;
+$component-colors__option-background--is-selected: #e2e4e7;
+$component-colors__option-foreground--is-focused: #fff;
+$component-colors__option-background--is-focused: $wordpress-colors__button-background--is-primary;
+
+$component-colors__overlay-foreground: #fff;
+$component-colors__overlay-background: rgba(0, 0, 0, 0.8);
+
+$component-colors__placeholder: #ccd;
+
+$component-colors__quality-analysis-foreground: #fff;
+$component-colors__quality-analysis-background--is-perfect: #7ad03a;
+$component-colors__quality-analysis-background--is-good: #7ad03a;
+$component-colors__quality-analysis-background--is-improvable: #ff930a;
+$component-colors__quality-analysis-background--is-bad: #dd3d36;
+$component-colors__quality-analysis-background--is-unknown: #82878c;
+
+$component-colors__task-progress: #1e8cbe;
+$component-colors__task-progress--is-completed: #88d658;
+
+$component-colors__template-placeholder: #070;
+
+// =======================================================================
+//    Post colors
+// =======================================================================
+$post-colors__foreground: $layout-colors__foreground;
+$post-colors__background: #edf0f3;
+$post-colors__border: #43505d;
+
+// =======================================================================
+//    Social message colors
+// =======================================================================
+$social-colors__foreground: $layout-colors__foreground;
+$social-colors__background: #e1e5ea;
+$social-colors__border: #43505d;
+
+$social-colors__foreground--is-auto: $layout-colors__foreground;
+$social-colors__background--is-auto: #f1f3f7;
+$social-colors__border--is-auto: $layout-colors__border;
+
+$social-colors__foreground--is-error: #c44;
+$social-colors__background--is-error: #fcc;
+$social-colors__border--is-error: #c44;
+
+// =======================================================================
+//    Task colors
+// =======================================================================
+$task-colors__actual-color: #99a6b4;
+$task-colors__actual-color--is-red: #e00000;
+$task-colors__actual-color--is-orange: #ee7d00;
+$task-colors__actual-color--is-yellow: #f9d510;
+$task-colors__actual-color--is-green: #4fab52;
+$task-colors__actual-color--is-cyan: #36ded0;
+$task-colors__actual-color--is-blue: #1759d8;
+$task-colors__actual-color--is-purple: #c335f5;
+
+$task-colors__background: #f6f8fb;
+$task-colors__background--is-red: #f9eded;
+$task-colors__background--is-orange: #fff3e6;
+$task-colors__background--is-yellow: #fffdf1;
+$task-colors__background--is-green: #effbee;
+$task-colors__background--is-cyan: #eefbf9;
+$task-colors__background--is-blue: #e4edff;
+$task-colors__background--is-purple: #f9e4ff;
+
+// =======================================================================
+//    External Events colors
+// =======================================================================
+$external-event-colors__background: #e7eaee;
+$external-event-colors__foreground: #333;
+$external-event-colors__background--is-day-event: #55627d;
+$external-event-colors__foreground--is-day-event: #fff;
+
+// =======================================================================
+//    Internal Events colors
+// =======================================================================
+$internal-event-colors__background: #b73669;
+$internal-event-colors__foreground: #fff;
+
+
+// =======================================================================
+//    Internal Events colors
+// =======================================================================
+$premium-feature__background: #fde68a;
+$premium-feature__foreground: #78350f;
+
+
+// =======================================================================
+//    Internal Events colors
+// =======================================================================
+$network-css-colors: (
+	"bluesky": #0b7aff,
+	"facebook": #45619d,
+	"gmb": #4981e6,
+	"googleplus": #e44040,
+	"instagram": #e350bb,
+	"linkedin": #1c86bd,
+	"mastodon": #6260fb,
+	"medium": #000,
+	"pinterest": #d01d15,
+	"reddit": #ff4500,
+	"telegram": #28a7e8,
+	"threads": #000,
+	"tiktok": #ee1d52,
+	"tumblr": #29445d,
+	"twitter": #000,
+);

@@ -1,0 +1,21 @@
+.nelio-content-delete-button {
+
+	&--is-deleting {
+		animation: nelio-content-delete-button-deleting-animation 1s infinite;
+	}
+}
+
+@keyframes nelio-content-delete-button-deleting-animation {
+
+	0% {
+		opacity: 0.7;
+	}
+
+	50% {
+		opacity: 0.1;
+	}
+
+	100% {
+		opacity: 0.7;
+	}
+}

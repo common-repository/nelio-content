@@ -1,0 +1,29 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-tasks-progress {
+	align-items: center;
+	display: flex;
+	margin-bottom: 0.6em;
+
+	&__bar-background {
+		background: $layout-colors__background--is-emphasized;
+		height: 0.5em;
+		flex-grow: 1;
+	}
+
+	&__bar {
+		background: $component-colors__task-progress;
+		height: 100%;
+		transition: all 200ms ease-in-out;
+
+		&--is-completed {
+			background: $component-colors__task-progress--is-completed;
+		}
+	}
+
+	&__percentage {
+		flex-grow: 0;
+		text-align: right;
+		width: 3.5em;
+	}
+}

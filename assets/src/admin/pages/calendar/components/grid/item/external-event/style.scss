@@ -1,0 +1,32 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-calendar-external-event {
+
+	background: $external-event-colors__background;
+	border-radius: 2px;
+	border: 1px solid $external-event-colors__background--is-day-event;
+	border-left-width: 4px;
+	color: $external-event-colors__foreground;
+	margin: 1px;
+	padding: 1px 4px;
+
+	&.nelio-content-calendar-item--is-locked {
+		filter: none;
+		opacity: 1;
+	}
+
+	&.nelio-content-calendar-item--is-blurred {
+		filter: saturate(0);
+		opacity: 0.2;
+	}
+
+	&--is-past-event.nelio-content-calendar-item--is-locked:not(:hover) {
+		opacity: 0.2;
+	}
+
+	&--is-day-event {
+		background: $external-event-colors__background--is-day-event;
+		border-left-width: 1px;
+		color: $external-event-colors__foreground--is-day-event;
+	}
+}

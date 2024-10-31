@@ -1,0 +1,36 @@
+{
+	"name": "@nelio-content/social-timeline",
+	"version": "1.0.0",
+	"description": "Social timeline.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"dependencies": {
+		"@nelio-content/components": "file:../components",
+		"@nelio-content/data": "file:../data",
+		"@nelio-content/date": "file:../date",
+		"@nelio-content/networks": "file:../networks",
+		"@nelio-content/social-message-editor": "file:../social-message-editor",
+		"@nelio-content/types": "file:../types",
+		"@nelio-content/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.0",
+		"@safe-wordpress/components": "file:../safe-wordpress/components",
+		"@safe-wordpress/data": "file:../safe-wordpress/data",
+		"@safe-wordpress/element": "file:../safe-wordpress/element",
+		"@safe-wordpress/i18n": "file:../safe-wordpress/i18n",
+		"classnames": "^2.3.1",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3"
+	}
+}

@@ -1,0 +1,33 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-error-pane-toggle {
+
+	margin: 0;
+	padding: 8px;
+
+	&--has-errors {
+		background: #d24633;
+		color: #fff;
+
+		&:focus,
+		&:hover {
+			background: #d24633 !important;
+			color: #fff !important;
+		}
+	}
+
+	&--is-toggled {
+		color: $wordpress-colors__toggle-foreground--is-toggled;
+		background: $wordpress-colors__toggle-background--is-toggled;
+		margin: 1px;
+		padding: 7px;
+
+		&:focus,
+		&:hover {
+			box-shadow: 0 0 0 1px $wordpress-colors__toggle-background--is-toggled, inset 0 0 0 1px $wordpress-colors__toggle-foreground--is-toggled !important;
+			color: $wordpress-colors__toggle-foreground--is-toggled !important;
+			background: $wordpress-colors__toggle-background--is-toggled !important;
+		}
+	}
+
+}

@@ -1,0 +1,60 @@
+.nelio-content-subscribe-action {
+	animation: nelio-content-wiggle 5s ease infinite;
+	animation-iteration-count: 3;
+	font-weight: 700;
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation: none;
+	}
+
+	&--has-promo {
+		background: #d24633 !important;
+		box-shadow: none !important;
+		color: #fff !important;
+
+		&:focus {
+			box-shadow: 0 0 0 var(--wp-admin-border-width-focus) #d24633 !important;
+		}
+	}
+}
+
+@keyframes nelio-content-wiggle {
+
+	0% {
+		transform: rotate(0);
+	}
+
+	7% {
+		transform: rotate(0);
+	}
+
+	10% {
+		transform: rotate(-0.3deg);
+	}
+
+	14% {
+		transform: rotate(5deg);
+	}
+
+	18% {
+		transform: rotate(-3deg);
+	}
+
+	22% {
+		transform: rotate(1deg);
+	}
+
+	28% {
+		transform: rotate(-0.1deg);
+	}
+
+	30% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}

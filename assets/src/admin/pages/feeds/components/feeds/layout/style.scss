@@ -1,0 +1,13 @@
+.nelio-content-feeds {
+	margin-top: 2em;
+	max-width: 80em;
+
+	&__title {
+		display: flex;
+		align-items: center;
+	}
+
+	&__actual-title {
+		flex-grow: 1;
+	}
+}

@@ -1,0 +1,47 @@
+@import "~admin-stylesheets/mixins";
+
+.nelio-content-social-profile-icon {
+
+	position: relative;
+
+	&__profile-picture {
+
+		background: rgba(0, 0, 0, 0.2);
+		background-clip: content-box;
+		border-radius: 50%;
+		height: 1em;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		width: 1em;
+
+		@include background-letters(#{&});
+
+	}
+
+	&__actual-profile-picture {
+		background-clip: content-box;
+		background-size: cover;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	&__network {
+		background-clip: content-box;
+		border: 0.15em solid transparent;
+		border-color: inherit;
+		border-radius: 100%;
+		bottom: -0.4em;
+		box-sizing: content-box;
+		content: "";
+		display: block;
+		font-size: 0.6em;
+		height: 1em;
+		position: absolute;
+		right: -0.4em;
+		width: 1em;
+	}
+
+}

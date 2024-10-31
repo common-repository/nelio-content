@@ -1,0 +1,9 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-message-actions {
+	color: $layout-colors__foreground--is-blurred;
+	display: flex;
+	flex-direction: row;
+	font-style: normal;
+	gap: 0.5em;
+}

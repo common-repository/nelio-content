@@ -1,0 +1,27 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-social-message-image-url-dialog {
+
+	&__content {
+		max-width: 40em;
+	}
+
+	&__image {
+		margin: 1em auto;
+		width: 20em;
+		height: 12em;
+		background-size: cover;
+		background-position: center;
+		background-color: $layout-colors__background--is-emphasized;
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 2em;
+
+		> * {
+			margin-left: 0.5em;
+		}
+	}
+}

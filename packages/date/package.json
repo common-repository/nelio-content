@@ -1,0 +1,21 @@
+{
+	"name": "@nelio-content/date",
+	"version": "1.0.0",
+	"description": "Date functions.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"editorial-calendar",
+		"social-media"
+	],
+	"homepage": "https://neliosoftware.com/content/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-content",
+	"bugs": {},
+	"devDependencies": {
+		"@safe-wordpress/date": "file:../safe-wordpress/date",
+		"moment": "^2.29.3",
+		"moment-timezone": "^0.5.34"
+	}
+}

@@ -1,0 +1,29 @@
+.nelio-content-external-calendar-manager {
+
+	width: 100%;
+	max-width: 40em;
+
+	&__actions {
+		display: flex;
+		gap: 0.5em;
+		justify-content: space-between;
+		margin-top: 2em;
+	}
+
+	&__item-actions {
+		visibility: hidden;
+	}
+
+	&__item:hover #{&}__item-actions {
+		visibility: visible;
+	}
+
+	&__item-url {
+		display: block;
+		width: 100%;
+		overflow-x: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		font-size: 0.9em;
+	}
+}

@@ -1,0 +1,64 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.nelio-content-task-preset {
+	background: $layout-colors__background;
+	border: 1px solid $layout-colors__border;
+	margin-top: 1em;
+	width: 100%;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+
+	&__header > button {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		padding: 1em;
+		width: 100%;
+
+		&,
+		&:focus,
+		&:active {
+			background: none;
+			border: none;
+		}
+
+		> * {
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
+
+		> :first-child {
+			flex-grow: 1;
+			text-align: left;
+		}
+	}
+
+	&__body {
+		border-top: 1px solid $layout-colors__border;
+		padding: 1em;
+	}
+
+	&__name-and-delete {
+		display: flex;
+		gap: 0.5em;
+		flex-direction: row;
+
+		> :first-child {
+			flex-grow: 1;
+		}
+
+		> :last-child {
+			margin-bottom: 8px;
+			display: flex;
+		}
+	}
+
+	&__actions {
+		text-align: center;
+		margin-top: 1em;
+	}
+}

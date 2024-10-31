@@ -1,0 +1,23 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-automation-settings {
+
+	&__title {
+		color: #1e1e1e;
+		font-size: 11px;
+		font-weight: 500;
+		margin-bottom: 1em;
+		margin-top: 2em;
+		text-transform: uppercase;
+	}
+
+	&__warning {
+		color: $layout-colors__foreground--is-warning;
+		font-style: italic;
+		margin-bottom: 0.5em;
+	}
+
+	&__automation-sources {
+		margin-top: 1em;
+	}
+}

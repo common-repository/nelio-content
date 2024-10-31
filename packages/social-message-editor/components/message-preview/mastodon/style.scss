@@ -1,0 +1,108 @@
+.nelio-content-social-message-mastodon-preview {
+
+	background: #fff;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 8px;
+	cursor: default;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	margin: 1em 1.5em;
+	padding: 10px 20px;
+	user-select: none;
+
+	.nelio-content-social-profile-icon {
+		float: left;
+		font-size: 42px;
+		margin-right: 10px;
+	}
+
+	&__name-info {
+		height: 42px;
+	}
+
+	&__display-name {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-top: 3px;
+		padding-top: 2px;
+	}
+
+	&__username,
+	&__date {
+		color: #536471;
+	}
+
+	&__image {
+		border-radius: 5px;
+		height: 200px;
+		object-fit: cover;
+		overflow: hidden;
+		width: 100%;
+	}
+
+}
+
+/* MESSAGE */
+
+.nelio-content-social-message-mastodon-preview .nelio-content-computed-text-preview {
+
+	cursor: auto;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	line-height: 22px;
+	margin: 10px 0;
+	user-select: auto;
+
+	&--empty {
+		opacity: 0.6;
+	}
+
+	&__link,
+	&__mention,
+	&__hash {
+		color: #2ca9e1;
+	}
+
+}
+
+/* SHARED POST */
+
+.nelio-content-mastodon-shared-link {
+
+	border: 1px solid #e1e8ed;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	overflow: hidden;
+
+	&__image {
+		height: 160px;
+		object-fit: cover;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	&__content {
+		padding: 1em;
+	}
+
+	&__title {
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+		margin-bottom: 0.2em;
+		padding: 0;
+	}
+
+	&__domain {
+		margin-bottom: 0.2em;
+		margin-top: -0.2em;
+	}
+
+	&__domain,
+	&__excerpt {
+		color: #536471;
+		font-size: 14px;
+	}
+}

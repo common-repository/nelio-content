@@ -1,0 +1,49 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-header {
+
+	&__dragging-controls {
+		display: flex;
+		width: 100%;
+	}
+
+	&__period-controller {
+		align-items: center;
+		display: flex;
+		flex-grow: 1;
+	}
+
+	&__drop-control {
+		border: 3px dashed transparent;
+		box-sizing: border-box;
+		padding: 0.5em 1em;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		width: 20%;
+		min-width: 6em;
+	}
+
+	&__period-control {
+
+		border-color: $layout-colors__foreground;
+		color: $layout-colors__foreground;
+		margin-right: 1em;
+
+		&--is-hovered {
+			background: $component-colors__calendar-hover-background--is-default;
+		}
+	}
+
+	&__trash-control {
+
+		border-color: $component-colors__calendar-hover-foreground--is-trash;
+		color: $component-colors__calendar-hover-foreground--is-trash;
+		flex-grow: 0;
+
+		&--is-hovered {
+			background: $component-colors__calendar-hover-background--is-trash;
+		}
+	}
+
+}

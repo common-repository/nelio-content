@@ -1,0 +1,11 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-feed-list {
+	background: $layout-colors__background;
+	border: 1px solid $layout-colors__border;
+	margin-top: 2em;
+}
+
+.nelio-content-empty-feed-list {
+	margin-top: 2em;
+}

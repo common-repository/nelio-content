@@ -1,0 +1,24 @@
+.nelio-content-post-filters {
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__right-action {
+		margin-top: 0.5em;
+		text-align: right;
+	}
+
+	&__author,
+	&__by-status {
+		margin-bottom: 2em;
+	}
+
+	&__categories,
+	&__statuses,
+	&__post-types {
+		margin-left: 1em;
+	}
+}

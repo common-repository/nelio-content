@@ -1,0 +1,22 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-premium-placeholder-panel {
+
+	.components-panel__body-toggle.components-button {
+		display: flex;
+		gap: 0.5em;
+		padding-right: 16px;
+	}
+
+	&__title {
+		flex-grow: 1;
+	}
+
+	&__icon {
+		color: $premium-feature__foreground;
+		background: $premium-feature__background;
+		padding: 0.2em;
+		margin: -0.2em;
+		border-radius: 4px;
+	}
+}

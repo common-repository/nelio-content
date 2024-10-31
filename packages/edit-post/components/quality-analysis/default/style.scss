@@ -1,0 +1,78 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-content-quality-analysis {
+
+	&__summary {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__actual-summary {
+		flex-grow: 1;
+	}
+
+	&__details-toggler {
+		flex-grow: 0;
+
+		&.components-button {
+			padding: 0;
+		}
+	}
+
+	&__details {
+		margin-top: 1em;
+	}
+
+	&__quality-check {
+		display: flex;
+		margin-bottom: 0.5em;
+	}
+
+	&__quality-check-icon-wrapper {
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 2em;
+	}
+
+	&__quality-check-icon {
+		align-items: center;
+		background: $component-colors__quality-analysis-background--is-unknown;
+		border-radius: 100%;
+		color: $component-colors__quality-analysis-foreground;
+		display: flex;
+		height: 1.5em;
+		justify-content: center;
+		width: 1.5em;
+
+		&--is-unknown {
+			opacity: 0.3;
+		}
+
+		&--is-good {
+			background: $component-colors__quality-analysis-background--is-good;
+		}
+
+		&--is-improvable {
+			background: $component-colors__quality-analysis-background--is-improvable;
+		}
+
+		&--is-bad {
+			background: $component-colors__quality-analysis-background--is-bad;
+		}
+
+		.dashicon {
+			height: 1em;
+			width: 1em;
+			font-size: 1em;
+		}
+	}
+
+	&__quality-check-rationale {
+		flex-grow: 1;
+
+		&--is-unknown,
+		&--is-good {
+			opacity: 0.3;
+		}
+	}
+}

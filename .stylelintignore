@@ -1,0 +1,9 @@
+# By default, all `node_modules` are ignored.
+
+*.json
+assets/dist
+vendor
+*.ts
+*.tsx
+packages/components/contextual-help/introjs.scss
+premium/dist
